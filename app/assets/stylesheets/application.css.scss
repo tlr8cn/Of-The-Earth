@@ -1,0 +1,96 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+@font-face {
+  font-family: 'DAYROM';
+  src:url('DAYROM.eot');
+  src:url('DAYROM.eot?#iefix') format('embedded-opentype'),
+    url('DAYROM.svg#icomoon') format('svg'),
+    url('DAYROM.woff') format('woff'),
+    url('DAYROM.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.gutter-0.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.gutter-0 > [class^="col-"], .gutter-0 > [class^=" col-"]{
+  padding-right: 0;
+  padding-left: 0;
+}
+
+// max gutter
+.gutter-max.row {
+  margin-right: -1000px;
+  margin-left: -1000px;
+}
+.gutter-max > [class^="col-"], .gutter-20 > [class^=" col-"] {
+  padding-right: 1000px;
+  padding-left: 1000px;
+}
+
+html {
+	font-size: 4px;
+	font-family: 'DAYROM';
+}
+
+body {
+	
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	font-size: 5rem;
+	font-family: 'DAYROM';
+}
+
+a:hover {
+	text-decoration: none;
+	color: black;
+	font-family: 'DAYROM';
+}
+
+body {
+	font-size: 5rem;
+	font-family: 'DAYROM';
+}
+
+p {
+	font-size: 5rem;
+	font-family: 'DAYROM';
+}
+
+h1 {
+	font-size: 10rem;
+	font-family: 'DAYROM';
+}
+
+h2 {
+	font-size: 8rem;
+	font-family: 'DAYROM';
+}
+
+h3 {
+	font-size: 6rem;
+	font-family: 'DAYROM';
+}

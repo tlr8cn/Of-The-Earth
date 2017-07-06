@@ -1,0 +1,312 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+.logo-image {
+	display: block;
+	margin: auto;
+	margin-top: 10px;
+	width: 42%;
+	height: 42%;
+}
+
+.tabs-container {
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.primary-tab {
+	
+	margin-left: 0px;
+	margin-right: 0px;
+
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+
+.tab-primary-link {
+	display: block;
+	padding-top: 45px;
+	padding-bottom: 15px;
+}
+
+
+
+.tabs-container { 
+	margin-top: 0px;
+	margin-bottom: 5px;
+}
+
+.carousel-container {
+	margin-bottom: 30px;
+}
+
+.footer {
+	text-align: center;
+	background-color: black;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.footer-text {
+	color: white;
+	font-size: 3rem;
+}
+
+nav ul {
+    
+    font-size: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+nav li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-width: 33%;
+}
+nav a {
+
+    display: block;
+    padding: 0px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all .25s ease;
+       -moz-transition: all .25s ease;
+        -ms-transition: all .25s ease;
+         -o-transition: all .25s ease;
+            transition: all .25s ease;
+}
+
+nav li:hover a {
+    background: white;
+}
+
+nav li ul {
+
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 35px;
+    visibility: hidden;
+    z-index: 1;
+    -webkit-transition: all .25s ease;
+       -moz-transition: all .25s ease;
+        -ms-transition: all .25s ease;
+         -o-transition: all .25s ease;
+            transition: all .25s ease;
+}
+nav li:hover ul {
+    opacity: 0.8;
+    top: 50px;
+    visibility: visible;
+}
+nav li ul li {
+    width: 100%;
+}
+nav li ul a:hover {
+    text-decoration: underline;
+}
+
+.sub-item {
+	font-size: 4rem;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+nav ul li {
+	display: block;
+}
+
+
+	nav li:hover .about-me-flowers {
+		width: 100%;
+		height: 100%;
+		background: white;
+	}
+
+	.about-me-flowers-cont-left {
+		padding-right: 0px !important;
+	}
+
+	.about-me-flowers-cont-right {
+		padding-left: 0px !important;
+	}
+
+	.about-me-label-cont {
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+	}
+
+	.about-me-flowers {
+		display: none;
+		position: relative;
+		z-index: 2;
+	}
+
+	.about-me:hover .about-me-flowers {
+		display: block;
+	}
+
+
+	nav li:hover .my-work-flowers {
+		width: 100%;
+		height: 100%;
+		background: white;
+	}
+
+	.my-work-flowers-cont-left {
+		padding-right: 0px !important;
+	}
+
+	.my-work-flowers-cont-right {
+		padding-left: 0px !important;
+	}
+
+	.my-work-label-cont {
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+	}
+
+	.my-work-flowers {
+		display: none;
+		position: relative;
+		z-index: 2;
+	}
+
+	.my-work:hover .my-work-flowers {
+		display: block;
+	}
+
+
+
+
+	nav li:hover .book-online-flowers {
+		width: 100%;
+		height: 100%;
+		background: white;
+	}
+
+	.book-online-flowers-cont-left {
+		padding-right: 0px !important;
+	}
+
+	.book-online-flowers-cont-right {
+		padding-left: 0px !important;
+	}
+
+	.book-online-label-cont {
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+	}
+
+	.book-online-flowers {
+		display: none;
+		position: relative;
+		z-index: 2;
+	}
+
+	.book-online:hover .book-online-flowers {
+		display: block;
+	}
+
+	.sub-items {
+		padding-top: 35px;
+	}
+
+
+@media screen and (max-width: 768px) {
+	nav li:hover .about-me-flowers {
+		width: 0%;
+		height: 0%;
+		background: white;
+		opacity: 0;
+	}
+
+	.about-me:hover .about-me-flowers {
+		display: none;
+	}
+
+	nav li:hover .my-work-flowers {
+		width: 0%;
+		height: 0%;
+		background: white;
+		opacity: 0;
+	}
+
+	.my-work:hover .my-work-flowers {
+		display: none;
+	}
+
+	nav li:hover .book-online-flowers {
+		width: 0%;
+		height: 0%;
+		background: white;
+		opacity: 0;
+	}
+
+	.book-online:hover .book-online-flowers {
+		display: none;
+	}
+
+	.sub-item {
+		font-size: 5rem;
+	}
+
+	.sub-items {
+		position: absolute;
+		padding-top: 0px;
+		margin-top: -50px;
+		margin-bottom: 10px;
+	}
+
+	nav li ul {
+
+	    left: 0;
+	    opacity: 0;
+	    position: absolute;
+	    top: 35px;
+	    visibility: hidden;
+	    z-index: 1;
+	    -webkit-transition: all .25s ease;
+	       -moz-transition: all .25s ease;
+	        -ms-transition: all .25s ease;
+	         -o-transition: all .25s ease;
+	            transition: all .25s ease;
+	}
+	nav li:hover ul {
+	    left: 0;
+	    opacity: 0;
+	    position: absolute;
+	    top: 35px;
+	    visibility: hidden;
+	    z-index: 1;
+	    -webkit-transition: all .25s ease;
+	       -moz-transition: all .25s ease;
+	        -ms-transition: all .25s ease;
+	         -o-transition: all .25s ease;
+	            transition: all .25s ease;
+	}
+
+	nav li ul li {
+	    width: 100%;
+	}
+	nav li ul a:hover {
+	    text-decoration: none;
+	}
+
+	.tab-primary-link {
+		display: block;
+		padding-top: 30px;
+		padding-bottom: 15px;
+	}
+
+}
