@@ -31,9 +31,15 @@
 				  	    	</div>
 
 				  	    	<ul class="sub-items about-me-sub-items" dropped="false">
-				                <li class="about-me-1"><a href="#" class="about-me-item sub-item">Who am I?</a></li>
-				                <li class="about-me-2"><a href="#" class="about-me-item sub-item">What I've Done</a></li>
-				                <li class="about-me-3"><a href="#" class="about-me-item sub-item">Client Testimonials</a></li>
+				                <li class="about-me-1">
+				  	    			<%= link_to "Who am I?", {controller: "who_am_i"}, class: "about-me-item sub-item" %>
+				                <li class="about-me-2">
+				                	<%= link_to "What I've Done", {controller: "what_ive_done"}, class: "about-me-item sub-item" %>		
+				                </li>
+				                <li class="about-me-3">
+				                	<%= link_to "Client Testimonials", {controller: "client_testimonials"}, class: "about-me-item sub-item" %>
+				                		
+				                </li>
 				            </ul>
 			            </li>
 			        </ul>

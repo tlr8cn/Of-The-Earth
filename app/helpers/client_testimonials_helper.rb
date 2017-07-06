@@ -1,0 +1,2 @@
+module ClientTestimonialsHelper
+end
