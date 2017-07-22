@@ -1,1 +1,114 @@
-<h1>About Me</h1>
+<div class="container">
+  <div class="row">
+  	<div class="col-sm-12 logo-tabs">
+  	  <div class="row logo-container">
+  	  	<div class="col-sm-12">
+			<img src="/assets/logo-banner.jpg" alt="Temp logo" class="logo-image">
+  	  	</div>
+  	  </div>
+  	  <div class="row tabs-container">
+  	  	<nav>
+	  	    <div class="col-sm-4 primary-tab about-me">
+
+	  	    		<ul class="cf">
+
+			  	    	<li>
+			  	    		<div class="row">
+
+			  	    			<div class="col-sm-2 about-me-flowers-cont-left">
+	  	    						<img class="about-me-flowers" src="/assets/flower.gif" />
+				  	    		</div>
+				  	    		<div class="col-sm-8 about-me-label-cont">
+
+				  	    			<%= link_to "ABOUT ME", {controller: "about_me"}, class: "about-me-list-item tab-primary-link dropdown" %>
+
+				  	    		</div>
+				  	    			<div class="col-sm-2 about-me-flowers-cont-right">
+
+
+	  	
+				  	    			</div>
+				  	    	</div>
+
+				  	    	<ul class="sub-items about-me-sub-items" dropped="false">
+				                <li class="about-me-1">
+				  	    			<%= link_to "Who am I?", {controller: "who_am_i"}, class: "about-me-item sub-item" %>
+				                <li class="about-me-2">
+				                	<%= link_to "What I've Done", {controller: "what_ive_done"}, class: "about-me-item sub-item" %>		
+				                </li>
+				                <li class="about-me-3">
+				                	<%= link_to "Client Testimonials", {controller: "client_testimonials"}, class: "about-me-item sub-item" %>
+				                		
+				                </li>
+				            </ul>
+			            </li>
+			        </ul>
+		        
+	  	    </div>
+	  	    <div class="col-sm-4 primary-tab my-work">
+	  	    	<ul class="cf">
+	  	    		<li>
+
+	  	    				<div class="row">
+
+			  	    			<div class="col-sm-2 my-work-flowers-cont-left">
+	  	    						<img class="my-work-flowers" src="/assets/flower.gif" />
+				  	    		</div>
+				  	    		<div class="col-sm-8 my-work-label-cont">
+
+	  	    					<%= link_to "MY WORK", "javascript:void(0)", class: "tab-primary-link dropdown my-work-list-item" %>
+
+				  	    		</div>
+				  	    			<div class="col-sm-2 my-work-flowers-cont-right">
+
+	  	    						<img class="my-work-flowers" src="/assets/flower.gif" />
+	  	
+				  	    		</div>
+				  	    	</div>
+
+
+
+	  	    			<ul class="sub-items my-work-sub-items" dropped="false">
+				            <li><a href="#" class="my-work-item sub-item my-work-1">Sub-Item-1</a></li>
+				            <li><a href="#" class="my-work-item sub-item my-work-2">Sub-Item-2</a></li>
+				            <li><a href="#" class="my-work-item sub-item my-work-3">Sub-Item-3</a></li>
+	  	    			</ul>
+	  	    		</li>
+	  	    	</ul>
+	  	    </div>
+
+	  	    <div class="col-sm-4 primary-tab book-online">
+	  	    	<ul class="cf">
+	  	    		<li>
+	  	    				<div class="row">
+
+			  	    			<div class="col-sm-2 book-online-flowers-cont-left">
+
+				  	    		</div>
+				  	    		<div class="col-sm-8 book-online-label-cont">
+
+	  	    					<%= link_to "BOOK ONLINE", { controller: "book_online" }, class: "tab-primary-link dropdown" %>
+
+				  	    		</div>
+				  	    			<div class="col-sm-2 book-online-flowers-cont-right">
+
+	  	    						<img class="book-online-flowers" src="/assets/flower.gif" />
+	  	
+				  	    		</div>
+				  	    	</div>
+
+
+	  	    			<ul class="sub-items">
+				            <li><a href="#" class="book-online-item sub-item">Sub-Item-1</a></li>
+				            <li><a href="#" class="book-online-item sub-item">Sub-Item-2</a></li>
+				            <li><a href="#" class="book-online-item sub-item">Sub-Item-3</a></li>
+	  	    			</ul>
+	  	    		</li>
+	  	    	</ul>
+	  	    </div>
+
+  	    </nav>
+  	  </div>
+  	</div>
+  </div>
+</div>
