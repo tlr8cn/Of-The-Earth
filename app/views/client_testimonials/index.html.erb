@@ -3,7 +3,9 @@
   	<div class="col-sm-12 logo-tabs">
   	  <div class="row logo-container">
   	  	<div class="col-sm-12">
-			<img src="/assets/logo-3.jpg" alt="Temp logo" class="logo-image">
+			<%= link_to "/home/index" do %>
+				<%= image_tag "/assets/logo-3.jpg", alt: "Logo", class: "logo-image" %>
+			<% end %>
   	  	</div>
   	  </div>
   	  <div class="row tabs-container">
@@ -20,7 +22,7 @@
 				  	    		</div>
 				  	    		<div class="col-sm-8 about-me-label-cont">
 
-				  	    			<%= link_to "ABOUT ME", {controller: "about_me"}, class: "about-me-list-item tab-primary-link dropdown" %>
+				  	    			<%= link_to "ABOUT ME", "javascript:void(0)" , class: "about-me-list-item tab-primary-link dropdown" %>
 
 				  	    		</div>
 				  	    			<div class="col-sm-2 about-me-flowers-cont-right">
@@ -32,10 +34,7 @@
 
 				  	    	<ul class="sub-items about-me-sub-items" dropped="false">
 				                <li class="about-me-1">
-				  	    			<%= link_to "Who am I?", {controller: "who_am_i"}, class: "about-me-item sub-item" %>
-				                <li class="about-me-2">
-				                	<%= link_to "What I've Done", {controller: "what_ive_done"}, class: "about-me-item sub-item" %>		
-				                </li>
+				  	    			<%= link_to "Who am I?", {controller: "about_me"}, class: "about-me-item sub-item" %>
 				                <li class="about-me-3">
 				                	<%= link_to "Client Testimonials", {controller: "client_testimonials"}, class: "about-me-item sub-item" %>
 				                		
@@ -69,9 +68,8 @@
 
 
 	  	    			<ul class="sub-items my-work-sub-items" dropped="false">
-				            <li><a href="#" class="my-work-item sub-item my-work-1">Sub-Item-1</a></li>
-				            <li><a href="#" class="my-work-item sub-item my-work-2">Sub-Item-2</a></li>
-				            <li><a href="#" class="my-work-item sub-item my-work-3">Sub-Item-3</a></li>
+				  	    	<li><%= link_to "Weddings", {controller: "weddings"}, class: "my-work-item sub-item" %></li>
+				            <li><%= link_to "Beautiful Moments", {controller: "beautiful_moments"}, class: "my-work-item sub-item" %></li>
 	  	    			</ul>
 	  	    		</li>
 	  	    	</ul>

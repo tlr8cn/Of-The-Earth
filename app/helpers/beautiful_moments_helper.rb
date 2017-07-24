@@ -1,0 +1,2 @@
+module BeautifulMomentsHelper
+end
