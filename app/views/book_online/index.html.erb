@@ -1,1 +1,143 @@
-<h1>Book Online</h1>
+<div class="container">
+  <div class="row">
+  	<div class="col-sm-12 logo-tabs">
+  	  <div class="row logo-container">
+  	  	<div class="col-sm-12">
+			<%= link_to "/home/index" do %>
+				<%= image_tag "/assets/logo-3.jpg", alt: "Logo", class: "logo-image" %>
+			<% end %>
+  	  	</div>
+  	  </div>
+  	  <div class="row tabs-container">
+  	  	<nav>
+	  	    <div class="col-sm-4 primary-tab about-me">
+
+	  	    		<ul class="cf">
+
+			  	    	<li>
+			  	    		<div class="row">
+
+			  	    			<div class="col-sm-2 about-me-flowers-cont-left">
+	  	    						<img class="about-me-flowers" src="/assets/flower.gif" />
+				  	    		</div>
+				  	    		<div class="col-sm-8 about-me-label-cont">
+
+				  	    			<%= link_to "ABOUT ME", "javascript:void(0)" , class: "about-me-list-item tab-primary-link dropdown" %>
+
+				  	    		</div>
+				  	    			<div class="col-sm-2 about-me-flowers-cont-right">
+
+
+	  	
+				  	    			</div>
+				  	    	</div>
+
+				  	    	<ul class="sub-items about-me-sub-items" dropped="false">
+				                <li class="about-me-1">
+				  	    			<%= link_to "Who am I?", {controller: "about_me"}, class: "about-me-item sub-item" %>
+				                <li class="about-me-3">
+				                	<%= link_to "Client Testimonials", {controller: "client_testimonials"}, class: "about-me-item sub-item" %>
+				                		
+				                </li>
+				            </ul>
+			            </li>
+			        </ul>
+		        
+	  	    </div>
+	  	    <div class="col-sm-4 primary-tab my-work">
+	  	    	<ul class="cf">
+	  	    		<li>
+
+	  	    				<div class="row">
+
+			  	    			<div class="col-sm-2 my-work-flowers-cont-left">
+	  	    						<img class="my-work-flowers" src="/assets/flower.gif" />
+				  	    		</div>
+				  	    		<div class="col-sm-8 my-work-label-cont">
+
+	  	    					<%= link_to "MY WORK", "javascript:void(0)", class: "tab-primary-link dropdown my-work-list-item" %>
+
+				  	    		</div>
+				  	    			<div class="col-sm-2 my-work-flowers-cont-right">
+
+	  	    						<img class="my-work-flowers" src="/assets/flower.gif" />
+	  	
+				  	    		</div>
+				  	    	</div>
+
+
+
+	  	    			<ul class="sub-items my-work-sub-items" dropped="false">
+				  	    	<li><%= link_to "Weddings", {controller: "weddings"}, class: "my-work-item sub-item" %></li>
+				            <li><%= link_to "Beautiful Moments", {controller: "beautiful_moments"}, class: "my-work-item sub-item" %></li>
+	  	    			</ul>
+	  	    		</li>
+	  	    	</ul>
+	  	    </div>
+
+	  	    <div class="col-sm-4 primary-tab book-online">
+	  	    	<ul class="cf">
+	  	    		<li>
+	  	    				<div class="row">
+
+			  	    			<div class="col-sm-2 book-online-flowers-cont-left">
+
+				  	    		</div>
+				  	    		<div class="col-sm-8 book-online-label-cont">
+
+	  	    					<%= link_to "BOOK ONLINE", { controller: "book_online" }, class: "tab-primary-link dropdown" %>
+
+				  	    		</div>
+				  	    			<div class="col-sm-2 book-online-flowers-cont-right">
+
+	  	    						<img class="book-online-flowers" src="/assets/flower.gif" />
+	  	
+				  	    		</div>
+				  	    	</div>
+
+
+	  	    		</li>
+	  	    	</ul>
+	  	    </div>
+
+  	    </nav>
+  	  </div>
+  	</div>
+  </div>
+
+
+  <div class="row">
+
+  	 <div class="col-sm-12">
+	 	 <select name="shoot-type" id="shoot-type">
+	 	 	<option selected disabled>Shoot Type</option>
+	 		 <option value="wedding" class="wedding-option">Wedding</option>
+	 		 <option value="beautiful-moment" class="beautiful-option">Beautiful Moment</option>
+	 	 </select>
+	 </div>
+
+
+ 	 <div class="col-sm-12 wedding-selection">
+ 	 	<h3>Wedding</h3>
+ 	 	<%= button_to 'Send', {:controller => "email", :action => "create"}, :method=>:get, :class => "btn btn-primary"  %>
+
+ 	 </div>
+
+ 	 <div class="col-sm-12 beautiful-selection">
+ 	 	<h3>Beautiful Moment</h3> 
+ 	 </div>
+
+  </div>
+
+
+  <div class="row footer-container gutter-max">
+ 	 <div class="col-sm-12 footer">
+ 	 	<p class="footer-text"> Email: SiennaTurecamoPhotography@gmail.com </p>
+ 	 	<p class="footer-text"> Phone: 540-660-9696 </p>
+ 	 	<br/>
+ 	 	<p class="footer-text"> All Creative content © Sienna Turecamo </p>
+  	 </div>
+  </div>
+
+
+</div>
