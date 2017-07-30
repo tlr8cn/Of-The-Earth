@@ -119,7 +119,25 @@
 
  	 <div class="col-sm-12 wedding-selection">
  	 	<h3>Wedding</h3>
- 	 	<%= button_to 'Send', {:controller => "email", :action => "create"}, :method=>:get, :class => "btn btn-primary"  %>
+ 	 	<%= form_tag(controller: "email", action: "create", method: "post", class: "wedding-form") do %>
+
+ 	 		<input type="date" name="client[date]">
+ 	 		<input type="text" name="client[bridename]" placeholder="Bride's Name" />
+ 	 		<input type="text" name="client[groomname]" placeholder="Groom's Name" />
+ 	 		<input type="text" name="client[weddinglocation]" placeholder="Wedding Location" />
+ 	 		<input type="text" name="client[receptionlocation]" placeholder="Reception Location" />
+ 	 		<input type="text" name="client[mailingaddress]" placeholder="Mailing Address" />
+ 	 		<input type="text" name="client[email]" placeholder="Email Address" />
+ 	 		<input type="tel" name="client[phone]" placeholder="Phone Number" />
+ 	 		<br>
+ 	 		<input type="checkbox" name="client[engagement]"> I would like an engagement shoot
+ 	 		<br>
+  			<input type="checkbox" name="client[bridal]"> I would like a styled bridal shoot 
+  			<br>
+  			<textarea name="client[about]" cols="40" rows="5" placeholder="A little bit about yourself..."></textarea>
+ 	 		<input name="send" type="submit" value="Send" />
+
+ 	 	<% end %>
 
  	 </div>
 

@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get 'weddings/index'
   get 'beautiful_moments/index'
   get 'email/create'
+  post 'email/create'
   
   root 'home#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
