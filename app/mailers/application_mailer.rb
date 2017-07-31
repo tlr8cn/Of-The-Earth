@@ -11,18 +11,30 @@ class ApplicationMailer < ActionMailer::Base
   	@phone = phone
 
   	@engagement = "No."
-	@bridal = "No."
+	  @bridal = "No."
 
-	if engagement == "on"
-		@engagement = "Yes."
-	end
+  	if engagement == "on"
+  		@engagement = "Yes."
+  	end
 
-	if bridal == "on"
-		@bridal = "Yes."
-	end
+  	if bridal == "on"
+  		@bridal = "Yes."
+  	end
 
-	@about = about
+	  @about = about
   	
   	mail(to: 'woahow@gmail.com', subject: "#{brideName} and #{groomName}'s wedding")
   end
+
+
+  def moment_email(momentName, clientName, email, phone, about)
+    @momentName = momentName
+    @clientName = clientName
+    @email = email
+    @phone = phone
+    @about = about
+
+    mail(to: 'woahow@gmail.com', subject: "#{clientName}'s Beautiful Moment")
+  end
+
 end
