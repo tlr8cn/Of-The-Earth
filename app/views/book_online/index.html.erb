@@ -130,21 +130,25 @@
  	 		</div>
 			<br>
  	 		<div class="row">
- 	 			<div class="col-sm-6">
+ 	 			<div class="col-sm-2"></div>
+ 	 			<div class="col-sm-4">
  	 			 	<input class="centered-input" type="text" name="client[bridename]" placeholder="Bride's Name" />
  	 			</div>
- 	 			<div class="col-sm-6">
+ 	 			<div class="col-sm-4">
  	 				<input class="centered-input" type="text" name="client[groomname]" placeholder="Groom's Name" />
  	 			</div>
+ 	 			<div class="col-sm-2"></div>
  	 		</div>
 			<br>
  	 		<div class="row">
- 	 			<div class="col-sm-6">
+ 	 			<div class="col-sm-2"></div>
+ 	 			<div class="col-sm-4">
  	 				<input class="centered-input" type="text" name="client[weddinglocation]" placeholder="Wedding Location" />
  	 			</div>
- 	 			<div class="col-sm-6">
+ 	 			<div class="col-sm-4">
  	 				<input class="centered-input" type="text" name="client[receptionlocation]" placeholder="Reception Location" />
  	 			</div>
+ 	 			<div class="col-sm-2"></div>
  	 		</div>
 			<br>
  	 		<div class="row">
@@ -170,13 +174,13 @@
  	 		<br>
  	 		<div class="row">
  	 			<div class="col-sm-12">
- 	 				<textarea class="centered-input" name="client[about]" cols="40" rows="5" placeholder="A little bit about yourself..."></textarea>
+ 	 				<textarea class="centered-input input-fill-container" name="client[about]" cols="40" rows="5" placeholder="A little bit about yourself..."></textarea>
  	 			</div>
  	 		</div>
  	 		<br>
  	 		<div class="row">
  	 			<div class="col-sm-12">
- 	 			<input class="centered-input" name="client[wedding-send]" type="submit" value="Send" />
+ 	 			<input class="centered-input larger-submit" name="client[wedding-send]" type="submit" value="Send" />
  	 			</div>
  	 		</div>
 
@@ -190,18 +194,36 @@
  	 	<%= form_tag(controller: "email", action: "create", method: "post", class: "moment-form") do %>
 
 
+ 	 		<div class="row">
+ 	 			<div class="col-sm-12">
+ 	 				<input class="centered-input input-fill-container" type="text" name="client[momentname]" placeholder="Moment Needing Captured" />
+ 	 			</div>
+ 	 		</div>
+ 	 		<br>
 
- 	 		<input class="centered-input" type="text" name="client[momentname]" placeholder="Moment Needing Captured" />
+ 	 		<div class="row">
+ 	 			<div class="col-sm-4">
+	 	 			<input class="centered-input" type="text" name="client[clientname]" placeholder="Your Name" />
+	 	 		</div>
+	 	 		<div class="col-sm-4">
+	 	 			<input class="centered-input" type="text" name="client[email]" placeholder="Email Address" />
+	 	 		</div>
+	 	 		<div class="col-sm-4">
+	 	 			<input class="centered-input" type="tel" name="client[phone]" placeholder="Phone Number" />
+	 	 		</div>
+ 	 		</div>
+ 	 		<br>
 
- 	 		<input class="centered-input" type="text" name="client[clientname]" placeholder="Your Name" />
- 	 		<input class="centered-input" type="text" name="client[email]" placeholder="Email Address" />
- 	 		<input class="centered-input" type="tel" name="client[phone]" placeholder="Phone Number" />
- 	 		<textarea class="centered-input" name="client[about]" cols="40" rows="5" placeholder="Details pertaining to your special moment..."></textarea>
-
+ 	 		<div class="row">
+ 	 			<div class="col-sm-12">
+ 	 				<textarea class="centered-input input-fill-container" name="client[about]" cols="40" rows="5" placeholder="Details pertaining to your special moment..."></textarea>
+ 	 			</div>
+ 	 		</div>
+ 	 		<br>
 
  	 	 	<div class="row">
  	 			<div class="col-sm-12">
- 	 				<input class="centered-input" name="client[moment-send]" type="submit" value="Send" />
+ 	 				<input class="centered-input larger-submit" name="client[moment-send]" type="submit" value="Send" />
  	 			</div>
  	 		</div>
 
