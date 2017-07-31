@@ -108,7 +108,7 @@
 
   <div class="row">
 
-  	 <div class="col-sm-12">
+  	 <div class="col-sm-12 selector">
 	 	 <select name="shoot-type" id="shoot-type">
 	 	 	<option selected disabled>Shoot Type</option>
 	 		 <option value="wedding" class="wedding-option">Wedding</option>
@@ -118,24 +118,67 @@
 
 
  	 <div class="col-sm-12 wedding-selection">
- 	 	<h3>Wedding</h3>
+ 	 	<h3 class="selection-header">Tell me about your wedding.</h3>
+ 	 	<br>
  	 	<%= form_tag(controller: "email", action: "create", method: "post", class: "wedding-form") do %>
 
- 	 		<input type="date" name="client[date]">
- 	 		<input type="text" name="client[bridename]" placeholder="Bride's Name" />
- 	 		<input type="text" name="client[groomname]" placeholder="Groom's Name" />
- 	 		<input type="text" name="client[weddinglocation]" placeholder="Wedding Location" />
- 	 		<input type="text" name="client[receptionlocation]" placeholder="Reception Location" />
- 	 		<input type="text" name="client[mailingaddress]" placeholder="Mailing Address" />
- 	 		<input type="text" name="client[email]" placeholder="Email Address" />
- 	 		<input type="tel" name="client[phone]" placeholder="Phone Number" />
+ 	 		<div class="row">
+ 	 			<div class="col-sm-12">
+ 	 				<span class="input-text">Wedding Date:</span>
+ 	 				<input class="centered-input" type="date" name="client[date]">
+ 	 			</div>
+ 	 		</div>
+			<br>
+ 	 		<div class="row">
+ 	 			<div class="col-sm-6">
+ 	 			 	<input class="centered-input" type="text" name="client[bridename]" placeholder="Bride's Name" />
+ 	 			</div>
+ 	 			<div class="col-sm-6">
+ 	 				<input class="centered-input" type="text" name="client[groomname]" placeholder="Groom's Name" />
+ 	 			</div>
+ 	 		</div>
+			<br>
+ 	 		<div class="row">
+ 	 			<div class="col-sm-6">
+ 	 				<input class="centered-input" type="text" name="client[weddinglocation]" placeholder="Wedding Location" />
+ 	 			</div>
+ 	 			<div class="col-sm-6">
+ 	 				<input class="centered-input" type="text" name="client[receptionlocation]" placeholder="Reception Location" />
+ 	 			</div>
+ 	 		</div>
+			<br>
+ 	 		<div class="row">
+ 	 			<div class="col-sm-4">
+ 	 				<input class="centered-input" type="text" name="client[mailingaddress]" placeholder="Mailing Address" />
+ 	 			</div>
+ 	 			<div class="col-sm-4">
+ 	 				<input class="centered-input" type="text" name="client[email]" placeholder="Email Address" />
+ 	 			</div>
+ 	 			<div class="col-sm-4">
+ 	 				<input class="centered-input" type="tel" name="client[phone]" placeholder="Phone Number" />
+ 	 			</div>
+ 	 		</div>
  	 		<br>
- 	 		<input type="checkbox" name="client[engagement]"> I would like an engagement shoot
+ 	 		<div class="row">
+ 	 			<div class="col-sm-6">
+ 	 				<input type="checkbox" name="client[engagement]"> I would like an engagement shoot
+ 	 			</div>
+ 	 			<div class="col-sm-6">
+ 	 				<input type="checkbox" name="client[bridal]"> I would like a styled bridal shoot 
+ 	 			</div>
+ 	 		</div>
  	 		<br>
-  			<input type="checkbox" name="client[bridal]"> I would like a styled bridal shoot 
-  			<br>
-  			<textarea name="client[about]" cols="40" rows="5" placeholder="A little bit about yourself..."></textarea>
- 	 		<input name="send" type="submit" value="Send" />
+ 	 		<div class="row">
+ 	 			<div class="col-sm-12">
+ 	 				<textarea class="centered-input" name="client[about]" cols="40" rows="5" placeholder="A little bit about yourself..."></textarea>
+ 	 			</div>
+ 	 		</div>
+ 	 		<br>
+ 	 		<div class="row">
+ 	 			<div class="col-sm-12">
+ 	 			<input class="centered-input" name="send" type="submit" value="Send" />
+ 	 			</div>
+ 	 		</div>
 
  	 	<% end %>
 
