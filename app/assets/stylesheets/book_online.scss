@@ -35,3 +35,24 @@
 .larger-submit {
 	width: 25%;
 }
+
+.option-picker {}
+
+.check-box {}
+
+@media screen and (max-width: 768px) {
+	
+	.option-picker {
+		display: block;
+		margin: auto;
+	}
+
+	.check-box {
+		text-align: center;
+	}
+
+	.centered-input {
+		margin-bottom: 15px;
+	}
+
+}

@@ -22,7 +22,10 @@
 				  	    		</div>
 				  	    		<div class="col-sm-8 about-me-label-cont">
 
-				  	    			<%= link_to "ABOUT ME", "javascript:void(0)" , class: "about-me-list-item tab-primary-link dropdown" %>
+				  	    			<%= link_to "ABOUT ME \u25BC", "javascript:void(0)" , class: "about-me-list-item about-me-mobile tab-primary-link dropdown" %>
+
+				  	    			<%= link_to "ABOUT ME", "javascript:void(0)" , class: "about-me-list-item about-me-desktop tab-primary-link dropdown" %>
+
 
 				  	    		</div>
 				  	    			<div class="col-sm-2 about-me-flowers-cont-right">
@@ -55,7 +58,11 @@
 				  	    		</div>
 				  	    		<div class="col-sm-8 my-work-label-cont">
 
-	  	    					<%= link_to "MY WORK", "javascript:void(0)", class: "tab-primary-link dropdown my-work-list-item" %>
+	  	    					<%= link_to "MY WORK", "javascript:void(0)", class: "tab-primary-link dropdown my-work-list-item my-work-desktop" %>
+
+	  	    					<%= link_to "MY WORK \u25BC", "javascript:void(0)", class: "tab-primary-link dropdown my-work-list-item my-work-mobile" %>
+
+
 
 				  	    		</div>
 				  	    			<div class="col-sm-2 my-work-flowers-cont-right">
@@ -109,7 +116,7 @@
   <div class="row">
 
   	 <div class="col-sm-12 selector">
-	 	 <select name="shoot-type" id="shoot-type">
+	 	 <select class="option-picker" name="shoot-type" id="shoot-type">
 	 	 	<option selected disabled>Shoot Type</option>
 	 		 <option value="wedding" class="wedding-option">Wedding</option>
 	 		 <option value="beautiful-moment" class="beautiful-option">Beautiful Moment</option>
@@ -164,10 +171,10 @@
  	 		</div>
  	 		<br>
  	 		<div class="row">
- 	 			<div class="col-sm-6">
+ 	 			<div class="col-sm-6 check-box">
  	 				<input type="checkbox" name="client[engagement]"> I would like an engagement shoot
  	 			</div>
- 	 			<div class="col-sm-6">
+ 	 			<div class="col-sm-6 check-box">
  	 				<input type="checkbox" name="client[bridal]"> I would like a styled bridal shoot 
  	 			</div>
  	 		</div>

@@ -179,7 +179,26 @@ nav ul li {
 	}
 
 
+
+	.about-me-mobile {
+		display: none !important;
+	}
+
+	.about-me-desktop {
+		display: block !important;
+	}
+
+	.my-work-mobile {
+		display: none !important;
+	}
+
+	.my-work-desktop {
+		display: block !important;
+	}
+
+
 @media screen and (max-width: 768px) {
+
 	nav li:hover .about-me-flowers {
 		width: 0%;
 		height: 0%;
@@ -263,6 +282,22 @@ nav ul li {
 		display: block;
 		padding-top: 30px;
 		padding-bottom: 15px;
+	}
+
+	.about-me-mobile {
+		display: block !important;
+	}
+
+	.about-me-desktop {
+		display: none !important;
+	}
+
+	.my-work-mobile {
+		display: block !important;
+	}
+
+	.my-work-desktop {
+		display: none !important;
 	}
 
 }

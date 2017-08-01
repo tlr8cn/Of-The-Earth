@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="row">
+ <div class="row">
   	<div class="col-sm-12 logo-tabs">
   	  <div class="row logo-container">
   	  	<div class="col-sm-12">
@@ -22,7 +22,10 @@
 				  	    		</div>
 				  	    		<div class="col-sm-8 about-me-label-cont">
 
-				  	    			<%= link_to "ABOUT ME", "javascript:void(0)" , class: "about-me-list-item tab-primary-link dropdown" %>
+				  	    			<%= link_to "ABOUT ME \u25BC", "javascript:void(0)" , class: "about-me-list-item about-me-mobile tab-primary-link dropdown" %>
+
+				  	    			<%= link_to "ABOUT ME", "javascript:void(0)" , class: "about-me-list-item about-me-desktop tab-primary-link dropdown" %>
+
 
 				  	    		</div>
 				  	    			<div class="col-sm-2 about-me-flowers-cont-right">
@@ -55,7 +58,11 @@
 				  	    		</div>
 				  	    		<div class="col-sm-8 my-work-label-cont">
 
-	  	    					<%= link_to "MY WORK", "javascript:void(0)", class: "tab-primary-link dropdown my-work-list-item" %>
+	  	    					<%= link_to "MY WORK", "javascript:void(0)", class: "tab-primary-link dropdown my-work-list-item my-work-desktop" %>
+
+	  	    					<%= link_to "MY WORK \u25BC", "javascript:void(0)", class: "tab-primary-link dropdown my-work-list-item my-work-mobile" %>
+
+
 
 				  	    		</div>
 				  	    			<div class="col-sm-2 my-work-flowers-cont-right">
@@ -95,6 +102,7 @@
 				  	    		</div>
 				  	    	</div>
 
+
 	  	    		</li>
 	  	    	</ul>
 	  	    </div>
@@ -103,7 +111,6 @@
   	  </div>
   	</div>
   </div>
-
 
   <div class="row">
   	<div class="col-sm-12 testimonials">

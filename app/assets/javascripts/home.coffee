@@ -28,6 +28,8 @@ $(document).on 'turbolinks:load', ->
 
 			$(".about-me-sub-items").attr("dropped", "true");
 
+			$(".about-me-mobile").html("ABOUT ME \u25B2");
+
 		else if $(".about-me-sub-items").attr("dropped") == "true" and $(window).width() < 768
 
 			$(".about-me-sub-items").css("visibility", "hidden");
@@ -36,6 +38,8 @@ $(document).on 'turbolinks:load', ->
 			$(".about-me-sub-items").css("display", "none");
 
 			$(".about-me-sub-items").attr("dropped", "false");
+
+			$(".about-me-mobile").html("ABOUT ME \u25BC");
 
 
 	$(".my-work-list-item").click ->
@@ -49,6 +53,8 @@ $(document).on 'turbolinks:load', ->
 
 			$(".my-work-sub-items").attr("dropped", "true");
 
+			$(".my-work-mobile").html("MY WORK \u25B2");
+
 		else if $(".my-work-sub-items").attr("dropped") == "true" and $(window).width() < 768
 
 			$(".my-work-sub-items").css("visibility", "hidden");
@@ -57,3 +63,5 @@ $(document).on 'turbolinks:load', ->
 			$(".my-work-sub-items").css("display", "none");
 
 			$(".my-work-sub-items").attr("dropped", "false");
+
+			$(".my-work-mobile").html("MY WORK \u25BC");
