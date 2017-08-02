@@ -22,7 +22,6 @@
   src:url('DAYROM.eot');
   src:url('DAYROM.eot?#iefix') format('embedded-opentype'),
     url('DAYROM.svg#icomoon') format('svg'),
-    url('DAYROM.woff') format('woff'),
     url('DAYROM.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
@@ -149,4 +148,16 @@ h3 {
 .footer-text {
 	color: white;
 	font-size: 3rem;
+}
+
+
+@media screen and (max-width: 768px) {
+	.tab-primary-link {
+		display: block;
+		padding-top: 0px;
+		margin-top: 45px;
+		padding-bottom: 0px;
+		margin-bottom: 15px;
+		z-index: 5;
+	}
 }

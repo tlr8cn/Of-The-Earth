@@ -1,0 +1,5 @@
+current directory: /home/tyler/Of-The-Earth/vendor/bundle/ruby/2.3.0/gems/puma-3.9.1/ext/puma_http11
+/usr/bin/ruby2.3 -r ./siteconf20170802-7323-x82b0x.rb extconf.rb
+mkmf.rb can't find header files for ruby at /usr/lib/ruby/include/ruby.h
+
+extconf failed, exit code 1

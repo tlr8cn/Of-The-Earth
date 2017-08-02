@@ -65,3 +65,28 @@ $(document).on 'turbolinks:load', ->
 			$(".my-work-sub-items").attr("dropped", "false");
 
 			$(".my-work-mobile").html("MY WORK \u25BC");
+
+
+	$(window).resize ->
+
+		if $(".about-me-sub-items").attr("dropped") == "true" and $(window).width() < 768
+
+			$(".about-me-sub-items").css("visibility", "hidden");
+			$(".about-me-sub-items").css("opacity", "0");
+			$(".about-me-sub-items").css("position", "absolute");
+			$(".about-me-sub-items").css("display", "none");
+
+			$(".about-me-sub-items").attr("dropped", "false");
+
+			$(".about-me-mobile").html("ABOUT ME \u25BC");
+
+		if $(".my-work-sub-items").attr("dropped") == "true" and $(window).width() < 768
+
+			$(".my-work-sub-items").css("visibility", "hidden");
+			$(".my-work-sub-items").css("opacity", "0");
+			$(".my-work-sub-items").css("position", "absolute");
+			$(".my-work-sub-items").css("display", "none");
+
+			$(".my-work-sub-items").attr("dropped", "false");
+
+			$(".my-work-mobile").html("MY WORK \u25BC");
