@@ -117,9 +117,11 @@
 
   	 <div class="col-sm-12 status-message">
   	 	<% if params[:formStatus] == "success" %>
-  	 		<p class="success-status">Email sent!</p>
+  	 		<p class="success-status">Your information has been emailed successfully. Thank you!</p>
   	 	<% elsif params[:formStatus] == "fail" %>
-  	 		<p class="error-status">Please complete all information.</p>
+  	 		<p class="error-status">Please complete all fields.</p>
+  	 	<% else %>
+  	 		<p>Interested in a shoot? Please fill out the following information, and I will get back to you soon!
   	 	<% end %>
   	 </div>
 
