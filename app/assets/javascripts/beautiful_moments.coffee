@@ -21,8 +21,7 @@ $(document).on 'turbolinks:load', ->
 	  modalImg.src = @src
 	  return
 
-	span = document.getElementsByClassName('close')[0]
 
-	span.onclick = ->
-	  modal.style.display = 'none'
-	  return
+	$('.close').click ->
+		modal.style.display = 'none'
+		return
