@@ -46,7 +46,10 @@
 
 .option-picker {}
 
-.check-box {}
+.check-box {
+	display: flex;
+	justify-content: center;
+}
 
 @media screen and (max-width: 768px) {
 	
@@ -57,6 +60,7 @@
 
 	.check-box {
 		text-align: center;
+		padding-bottom: 15px;
 	}
 
 	.centered-input {

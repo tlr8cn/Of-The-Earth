@@ -116,11 +116,11 @@
   	<div class="col-sm-12 carousel-container">
 
 
-	  		<% (1..5).each do |i| %>
+	  		<% (1..14).each do |i| %>
 	  			<div class="row gallery-row">
 		  			<% (1..3).each do |j| %>
 		  				<div class="col-sm-4">
-		  					<%= image_tag image_path("beautiful-moments/#{@x}.jpg"), alt: "Carousel Image", class: "gallery-image", id: "galImg" %>
+		  					<%= image_tag image_path("beautiful-moments/#{@x}.jpg"), class: "gallery-image", id: "galImg" %>
 		  				</div>
 		  				<% @x += 1 %>
 		  			<% end %>
