@@ -55,6 +55,30 @@ nav li:hover ul {
 
 .published-image-7 {
 	width: 100%;
-	margin-bottom: 15px;	
+	margin-bottom: 15px;
 }
 
+.published-image-8 {
+	margin-bottom: 15px;
+}
+
+.magical-text {
+	font-size: 8rem;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.magicial-bottom-hr {
+	margin-bottom: 40px;
+}
+
+.published-flex {
+	display: flex;
+	align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+	.published-flex {
+		display: block;
+	}
+}
