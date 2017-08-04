@@ -23,7 +23,7 @@ class ApplicationMailer < ActionMailer::Base
 
 	  @about = about
   	
-  	mail(to: 'woahow@gmail.com', subject: "#{brideName} and #{groomName}'s wedding")
+  	mail(to: 'siennaturecamophotography@gmail.com', subject: "#{brideName} and #{groomName}'s wedding")
   end
 
 
@@ -34,7 +34,7 @@ class ApplicationMailer < ActionMailer::Base
     @phone = phone
     @about = about
 
-    mail(to: 'woahow@gmail.com', subject: "#{clientName}'s Beautiful Moment")
+    mail(to: 'siennaturecamophotography@gmail.com', subject: "#{clientName}'s Beautiful Moment")
   end
 
 end
