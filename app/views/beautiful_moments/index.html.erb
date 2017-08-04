@@ -116,7 +116,7 @@
   	<div class="col-sm-12 carousel-container">
 
 
-	  		<% (1..14).each do |i| %>
+	  		<% (1..13).each do |i| %>
 	  			<div class="row gallery-row">
 		  			<% (1..3).each do |j| %>
 		  				<div class="col-sm-4">
@@ -126,6 +126,14 @@
 		  			<% end %>
 		  		</div>
 	  		<% end %>
+
+	  			<div class="row gallery-row">
+	  				<div class="col-sm-4">
+	  					<%= image_tag image_path("beautiful-moments/#{@x}.jpg"), class: "gallery-image", id: "galImg" %>
+	  				</div>
+	  				<div class="col-sm-4"></div>
+	  				<div class="col-sm-4"></div>
+	  			</div>
 
 	  		<div id="myModal" class="modal">
 			  <span class="close">&times;</span>
