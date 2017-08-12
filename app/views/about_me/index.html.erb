@@ -18,7 +18,7 @@
 			  	    		<div class="row">
 
 			  	    			<div class="col-sm-2 about-me-flowers-cont-left">
-	  	    						<img class="about-me-flowers" src="/assets/flower.gif" />
+	  	    						<%= image_tag image_path("flower.gif"), class: "about-me-flowers" %>
 				  	    		</div>
 				  	    		<div class="col-sm-8 about-me-label-cont">
 
@@ -54,7 +54,7 @@
 	  	    				<div class="row">
 
 			  	    			<div class="col-sm-2 my-work-flowers-cont-left">
-	  	    						<img class="my-work-flowers" src="/assets/flower.gif" />
+			  	    				<%= image_tag image_path("flower.gif"), class: "my-work-flowers" %>
 				  	    		</div>
 				  	    		<div class="col-sm-8 my-work-label-cont">
 
@@ -67,7 +67,7 @@
 				  	    		</div>
 				  	    			<div class="col-sm-2 my-work-flowers-cont-right">
 
-	  	    						<img class="my-work-flowers" src="/assets/flower.gif" />
+	  	    						<%= image_tag image_path("flower.gif"), class: "my-work-flowers" %>
 	  	
 				  	    		</div>
 				  	    	</div>
@@ -97,7 +97,7 @@
 				  	    		</div>
 				  	    			<div class="col-sm-2 book-online-flowers-cont-right">
 
-	  	    						<img class="book-online-flowers" src="/assets/flower.gif" />
+	  	    						<%= image_tag image_path("flower.gif"), class: "book-online-flowers" %>
 	  	
 				  	    		</div>
 				  	    	</div>
@@ -121,7 +121,7 @@
 
   <div class="row">
   	<div class="col-sm-12 personal-photo-container">
-  	<img src="/assets/personal_photo.jpg" alt="personal photo" class="personal-photo">
+  		<%= image_tag image_path("personal_photo.jpg"), class: "personal-photo" %>
   	</div>
   </div>
 
@@ -213,36 +213,36 @@
 	  	<h3>Featured in:</h3>
   		<div class="row published-flex">
 	  		<div class="col-sm-4">
-	  			<a href="https://www.borrowedandblue.com/us/wedding-photographers/sienna-turecamo-photography"><img src="/assets/published-1.jpg" alt="Published 1" class="published-image published-image-1"></a>
+	  			<a href="https://www.borrowedandblue.com/us/wedding-photographers/sienna-turecamo-photography"><%= image_tag image_path("published-1.jpg"), class: "published-image published-image-1" %></a>
 	  		</div>
 
 	  		<div class="col-sm-4">
-	  			<a href="http://www.inkjunkeyz.com/"><img src="/assets/published-2.jpg" alt="Published 2" class="published-image published-image-2"></a>
+	  			<a href="http://www.inkjunkeyz.com/"><%= image_tag image_path("published-2.jpg"), class: "published-image published-image-2" %></a>
 	  		</div>
 
 	  		<div class="col-sm-4">
-	  			<a href="https://ampersandlit.com/"><img src="/assets/published-3.jpg" alt="Published 3" class="published-image published-image-3"></a>
+	  			<a href="https://ampersandlit.com/"><%= image_tag image_path("published-3.jpg"), class: "published-image published-image-3" %></a>
 	  		</div>
 	  	</div>
 
   		<div class="row published-flex">
 	  		<div class="col-sm-4">
-	  			<a href="http://arts.virginia.edu/galleries-grounds/galleries-museums/"><img src="/assets/published-4.jpg" alt="Published 4" class="published-image published-image-4"></a>
+	  			<a href="http://arts.virginia.edu/galleries-grounds/galleries-museums/"><%= image_tag image_path("published-4.jpg"), class: "published-image published-image-4" %></a>
 	  		</div>
 
 	  		<div class="col-sm-4">
-	  			<a href="http://www.thehaven.org/"><img src="/assets/published-5.jpg" alt="Published 5" class="published-image published-image-5"></a>
+	  			<a href="http://www.thehaven.org/"><%= image_tag image_path("published-4.jpg"), class: "published-image published-image-4" %></a>
 	  		</div>
 
 	  		<div class="col-sm-4">
-	  			<a href="http://www.santareparata.org/"><img src="/assets/published-6.jpg" alt="Published 6" class="published-image published-image-6"></a>
+	  			<a href="http://www.santareparata.org/"><%= image_tag image_path("published-5.jpg"), class: "published-image published-image-5" %></a>
 	  		</div>
 	  	</div>
 
 
   		<div class="row published-flex">
 	  		<div class="col-sm-4">
-	  			<a href="http://opengrounds.virginia.edu/"><img src="/assets/published-7.jpg" alt="Published 7" class="published-image published-image-7"></a>
+	  			<a href="http://opengrounds.virginia.edu/"><%= image_tag image_path("published-6.jpg"), class: "published-image published-image-6" %></a>
 	  		</div>
 
 	  		<div class="col-sm-4">
