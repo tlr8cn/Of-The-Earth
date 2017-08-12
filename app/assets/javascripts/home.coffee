@@ -4,17 +4,18 @@
 
 $(document).on 'turbolinks:load', ->
 
+	flowerfilename = $(".about-me-flowers").attr("src");
 	
 	if $(window).width() >= 576
 
 	    $(".about-me").hover ->
-	        $(".about-me-flowers").attr("src", "/assets/flower.gif");
+	        $(".about-me-flowers").attr("src", flowerfilename);
 
 	    $(".my-work").hover ->
-	        $(".my-work-flowers").attr("src", "/assets/flower.gif");
+	        $(".my-work-flowers").attr("src", flowerfilename);
 
 	    $(".book-online").hover ->
-	        $(".book-online-flowers").attr("src", "/assets/flower.gif");
+	        $(".book-online-flowers").attr("src", flowerfilename);
 
 
 	$(".about-me-list-item").click ->
