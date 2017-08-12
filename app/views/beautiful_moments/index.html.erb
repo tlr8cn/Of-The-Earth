@@ -4,7 +4,7 @@
   	  <div class="row logo-container">
   	  	<div class="col-sm-12">
 			<%= link_to "/home/index" do %>
-				<%= image_tag "/assets/logo-3.jpg", alt: "Logo", class: "logo-image" %>
+				<%= image_tag image_path("logo-3.jpg"), class: "logo-image" %>
 			<% end %>
   	  	</div>
   	  </div>
@@ -18,7 +18,7 @@
 			  	    		<div class="row">
 
 			  	    			<div class="col-sm-2 about-me-flowers-cont-left">
-	  	    						<img class="about-me-flowers" src="/assets/flower.gif" />
+	  	    						<%= image_tag image_path("flower.gif"), class: "about-me-flowers" %>
 				  	    		</div>
 				  	    		<div class="col-sm-8 about-me-label-cont">
 
@@ -54,7 +54,7 @@
 	  	    				<div class="row">
 
 			  	    			<div class="col-sm-2 my-work-flowers-cont-left">
-	  	    						<img class="my-work-flowers" src="/assets/flower.gif" />
+			  	    				<%= image_tag image_path("flower.gif"), class: "my-work-flowers" %>
 				  	    		</div>
 				  	    		<div class="col-sm-8 my-work-label-cont">
 
@@ -67,7 +67,7 @@
 				  	    		</div>
 				  	    			<div class="col-sm-2 my-work-flowers-cont-right">
 
-	  	    						<img class="my-work-flowers" src="/assets/flower.gif" />
+	  	    						<%= image_tag image_path("flower.gif"), class: "my-work-flowers" %>
 	  	
 				  	    		</div>
 				  	    	</div>
@@ -97,7 +97,7 @@
 				  	    		</div>
 				  	    			<div class="col-sm-2 book-online-flowers-cont-right">
 
-	  	    						<img class="book-online-flowers" src="/assets/flower.gif" />
+	  	    						<%= image_tag image_path("flower.gif"), class: "book-online-flowers" %>
 	  	
 				  	    		</div>
 				  	    	</div>
@@ -111,7 +111,6 @@
   	  </div>
   	</div>
   </div>
-
   <div class="row">
   	<div class="col-sm-12 carousel-container">
 
