@@ -19,10 +19,13 @@
 
 @font-face {
   font-family: 'DAYROM';
-  src:url('DAYROM.eot');
-  src:url('DAYROM.eot?#iefix') format('embedded-opentype'),
-    url('DAYROM.svg#icomoon') format('svg'),
-    url('DAYROM.ttf') format('truetype');
+  src: asset-url('DAYROM.eot');
+  src:
+    asset-url('DAYROM.eot?#iefix') format('embedded-opentype'),
+    asset-url('DAYROM.woff2') format('woff2'),
+    asset-url('DAYROM.ttf') format('truetype'),
+    asset-url('DAYROM.woff') format('woff'),
+    asset-url('DAYROM.svg?#DAYROM') format('svg');
   font-weight: normal;
   font-style: normal;
 }
