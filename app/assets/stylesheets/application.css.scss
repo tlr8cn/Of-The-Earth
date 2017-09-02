@@ -113,6 +113,10 @@ h3 {
 
 /****** Header Styling ******/
 
+.logo-container
+{
+	margin-bottom: 0;
+}
 .logo-image {
 	display: block;
 	margin: auto;
@@ -121,7 +125,13 @@ h3 {
 	height: 42%;
 }
 
+.hamburger-menu
+{
+	display: none;
+}
+
 .tabs-container {
+	display: block;
 	margin-left: 0px !important;
 	margin-right: 0px !important;
 	margin-top: 20px;
@@ -179,5 +189,32 @@ h3 {
 		padding-bottom: 0px;
 		margin-bottom: 15px;
 		z-index: 5;
+	}
+
+	.logo-image {
+		margin-left: 30px;
+		width: 60%;
+	}
+
+	.hamburger-menu-wrapper
+	{
+		margin-top: 30px;
+	}
+
+	.hamburger-menu
+	{
+		display: block;
+		margin: auto;
+		width: 50%;
+	}
+
+	.tabs-container
+	{
+		display: none;
+	}
+
+	.logo-container
+	{
+		margin-bottom: 30px;
 	}
 }

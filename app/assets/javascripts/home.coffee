@@ -17,6 +17,16 @@ $(document).on 'turbolinks:load', ->
 	    $(".book-online").hover ->
 	        $(".book-online-flowers").attr("src", flowerfilename);
 
+	$(".hamburger-menu-wrapper").click ->
+		if $(".tabs-container").attr("dropped") == "true"
+			$(".tabs-container").attr("dropped", "false")
+			$(".tabs-container").css("display", "none")
+			$(".logo-container").css("margin-bottom", "30px")
+		else if $(".tabs-container").attr("dropped") == "false"
+			$(".tabs-container").attr("dropped", "true")
+			$(".tabs-container").css("display", "block")
+			$(".logo-container").css("margin-bottom", "0")
+
 
 	$(".about-me-list-item").click ->
 
@@ -69,6 +79,16 @@ $(document).on 'turbolinks:load', ->
 
 
 	$(window).resize ->
+
+		if $(window).width() >= 768
+			$(".tabs-container").attr("dropped", "true")
+			$(".tabs-container").css("display", "block")
+			$(".logo-container").css("margin-bottom", "0")
+		else
+			$(".tabs-container").attr("dropped", "false")
+			$(".tabs-container").css("display", "none")
+			$(".logo-container").css("margin-bottom", "30px")
+
 
 		if $(".about-me-sub-items").attr("dropped") == "true" and $(window).width() < 768
 
