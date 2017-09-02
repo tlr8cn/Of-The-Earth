@@ -13,6 +13,33 @@
 	
 }
 
+.images-that-breathe
+{
+	display: block;
+	margin: auto;
+	text-align: center;
+	color: #c9c7ca;
+	letter-spacing: 20px;
+    font-size: 50px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+
+    @media screen and (max-width: 992px) {
+    	letter-spacing: 10px;
+    	font-size: 40px;
+    }
+
+    @media screen and (max-width: 768px) {
+    	letter-spacing: 8px;
+    	font-size: 32px;
+    }
+
+    @media screen and (max-width: 576px) {
+    	letter-spacing: 5px;
+    	font-size: 26px;
+    }
+}
+
 nav ul {
     
     font-size: 0;

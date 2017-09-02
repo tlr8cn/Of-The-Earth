@@ -30,6 +30,19 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Autumn';
+  src: asset-url('Autumn.eot');
+  src:
+    asset-url('Autumn.eot?#iefix') format('embedded-opentype'),
+    asset-url('Autumn.woff2') format('woff2'),
+    asset-url('Autumn.ttf') format('truetype'),
+    asset-url('Autumn.woff') format('woff'),
+    asset-url('Autumn.svg?#Autumn') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .gutter-0.row {
   margin-right: 0;
   margin-left: 0;
@@ -151,6 +164,10 @@ h3 {
 .footer-text {
 	color: #888888;
 	font-size: 3rem;
+}
+
+.emphasized {
+	font-family: 'Autumn';
 }
 
 
