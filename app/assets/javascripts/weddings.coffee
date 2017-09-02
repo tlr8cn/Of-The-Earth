@@ -8,20 +8,22 @@ $(document).on 'turbolinks:load', ->
 	img = document.getElementById('myImg')
 	modalImg = document.getElementById('img01')
 
-	$('.gallery-image').click ->
-	  modal.style.display = 'flex'
-	  modal.style.align-items = 'center'
-	  modal.style.justify-content = 'center'
+	
+	if $(window).width() >= 768
+		$('.gallery-image').click ->
+		  modal.style.display = 'flex'
+		  modal.style.align-items = 'center'
+		  modal.style.justify-content = 'center'
 
-	  if $(this).height() > $(this).width()
-	  	$('.modal-content').css('max-width', '550px') 
-	  else
-	  	$('.modal-content').css('max-width', '1200px') 
+		  if $(this).height() > $(this).width()
+		  	$('.modal-content').css('max-width', '550px') 
+		  else
+		  	$('.modal-content').css('max-width', '1200px') 
 
-	  modalImg.src = @src
-	  return
+		  modalImg.src = @src
+		  return
 
 
-	$('.close').click ->
-		modal.style.display = 'none'
+		$('.close').click ->
+			modal.style.display = 'none'
 		return
