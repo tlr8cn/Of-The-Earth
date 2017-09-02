@@ -218,3 +218,16 @@ h3 {
 		margin-bottom: 30px;
 	}
 }
+
+
+@media screen and (max-width: 370px) {
+	.hamburger-menu-wrapper
+	{
+		margin-top: 20px;
+	}
+
+	.hamburger-menu
+	{
+		width: 75%;
+	}
+}
