@@ -55,12 +55,8 @@
 
 // max gutter
 .gutter-max.row {
-  margin-right: -1000px;
-  margin-left: -1000px;
 }
 .gutter-max > [class^="col-"], .gutter-20 > [class^=" col-"] {
-  padding-right: 1000px;
-  padding-left: 1000px;
 }
 
 html {
@@ -69,7 +65,7 @@ html {
 }
 
 body {
-	
+
 }
 
 a {
@@ -139,7 +135,7 @@ h3 {
 }
 
 .primary-tab {
-	
+
 	margin-left: 0px;
 	margin-right: 0px;
 
@@ -156,7 +152,7 @@ h3 {
 
 
 
-.tabs-container { 
+.tabs-container {
 	margin-top: 0px;
 	margin-bottom: 5px;
 }

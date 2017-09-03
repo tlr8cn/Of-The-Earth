@@ -34,7 +34,7 @@
 				  	    			<div class="col-sm-2 about-me-flowers-cont-right">
 
 
-	  	
+
 				  	    			</div>
 				  	    	</div>
 
@@ -43,12 +43,12 @@
 				  	    			<%= link_to "Who am I?", {controller: "about_me"}, class: "about-me-item sub-item" %>
 				                <li class="about-me-3">
 				                	<%= link_to "Client Testimonials", {controller: "client_testimonials"}, class: "about-me-item sub-item" %>
-				                		
+
 				                </li>
 				            </ul>
 			            </li>
 			        </ul>
-		        
+
 	  	    </div>
 	  	    <div class="col-sm-4 primary-tab my-work">
 	  	    	<ul class="cf">
@@ -71,7 +71,7 @@
 				  	    			<div class="col-sm-2 my-work-flowers-cont-right">
 
 	  	    						<%= image_tag image_path("flower.gif"), class: "my-work-flowers" %>
-	  	
+
 				  	    		</div>
 				  	    	</div>
 
@@ -101,7 +101,7 @@
 				  	    			<div class="col-sm-2 book-online-flowers-cont-right">
 
 	  	    						<%= image_tag image_path("flower.gif"), class: "book-online-flowers" %>
-	  	
+
 				  	    		</div>
 				  	    	</div>
 
@@ -123,6 +123,7 @@
 
 		  				<div class="col-sm-4">
 		  					<% if @x == 156 %>
+                  </div>
 		  						<% break %>
 		  					<% end %>
 		  					<%= image_tag image_path("weddings/#{@x}.jpg"), class: "gallery-image", id: "galImg" %>
@@ -135,20 +136,20 @@
 	  		<div id="myModal" class="modal">
 			  <span class="close">&times;</span>
 			  <img class="modal-content" id="img01">
-			  
+
 			</div>
 
-	</div>
+	   </div>
   </div>
 
+</div>
 
-  <div class="row footer-container gutter-max">
- 	 <div class="col-sm-12 footer">
- 	 	<p class="footer-text"> Email: SiennaTurecamoPhotography@gmail.com </p>
- 	 	<p class="footer-text"> Phone: 540.660.9696 </p>
- 	 	<br/>
- 	 	<p class="footer-text"> All Creative content © Sienna Turecamo </p>
-  	 </div>
-  </div>
 
+<div class="row footer-container gutter-max">
+ <div class="col-sm-12 footer">
+  <p class="footer-text"> Email: SiennaTurecamoPhotography@gmail.com </p>
+  <p class="footer-text"> Phone: 540.660.9696 </p>
+  <br/>
+  <p class="footer-text"> All Creative content © Sienna Turecamo </p>
+   </div>
 </div>
