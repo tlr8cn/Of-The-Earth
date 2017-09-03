@@ -13,9 +13,25 @@ h2 {
 h3 {
 	text-align: center;
 	font-family: "Autumn" !important;
-	font-size: 30px;
-	color: rgba(202, 139, 46, 0.51) !important;
+	font-size: 30px !important;
+	color: rgba(202, 139, 46, 0.69) !important;
 	letter-spacing: 4px;
+}
+
+.end-of-the-day
+{
+	font-size: 18px !important;
+}
+
+.intro-text-p
+{
+	margin-top: 15px;
+	font-size: 28px !important;
+
+	&--latter
+	{
+		font-size: 24px !important
+	}
 }
 
 .flavor
@@ -23,6 +39,11 @@ h3 {
 	font-family: "Autumn" !important;
 	letter-spacing: 3px;
 	font-size: 18px
+
+	&--large
+	{
+		font-size: 22px;
+	}
 }
 
 .something-magical {
@@ -50,6 +71,7 @@ nav li:hover ul {
 
 .published-image-1 {
 	padding-top: 30px;
+	width: 60%;
 }
 
 .published-image-2 {
@@ -74,9 +96,11 @@ nav li:hover ul {
 }
 
 .magical-text {
-	font-size: 8rem;
+	font-size: 40px;
 	padding-top: 15px;
 	padding-bottom: 15px;
+	font-family: "Autumn";
+	letter-spacing: 5px;
 }
 
 .magicial-bottom-hr {
