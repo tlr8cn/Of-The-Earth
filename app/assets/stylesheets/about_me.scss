@@ -12,6 +12,17 @@ h2 {
 
 h3 {
 	text-align: center;
+	font-family: "Autumn" !important;
+	font-size: 30px;
+	color: rgba(202, 139, 46, 0.51) !important;
+	letter-spacing: 4px;
+}
+
+.flavor
+{
+	font-family: "Autumn" !important;
+	letter-spacing: 3px;
+	font-size: 18px
 }
 
 .something-magical {
@@ -21,7 +32,7 @@ h3 {
 }
 
 .personal-photo {
-	width: 75%;	
+	width: 75%;
 	display: block;
 	margin: auto;
 	margin-top: 10px;
@@ -50,7 +61,7 @@ nav li:hover ul {
 }
 
 .published-image-4 {
-	width: 55%;	
+	width: 55%;
 }
 
 .published-image-7 {
