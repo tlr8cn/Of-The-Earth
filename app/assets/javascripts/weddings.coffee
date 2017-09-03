@@ -2,12 +2,43 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
+if window.location.href.includes('weddings')
+	document.onkeydown = (event) ->
+	  if !event
+	    event = window.event
+	  code = event.keyCode
+	  if event.charCode and code == 0
+	    code = event.charCode
+	  switch code
+	    when 37
+	      if $('.modal').css('display') == 'flex'
+	      	imgsrc = $('.modal-content').attr('src')
+	      	weddingIndx = imgsrc.indexOf('weddings/')
+	      	dashIndx = imgsrc.indexOf('-')
+	      	imgNumber = parseInt(imgsrc.substring(weddingIndx + 9, dashIndx))
+	      	previousIndx = imgNumber - 2
+	      	if imgNumber == 0
+	      		previousIndx = $('.gallery-image').length - 1
+	      	$('.modal-content').attr('src', $('.gallery-image').get(previousIndx).getAttribute('src'))
+	    when 39
+	      if $('.modal').css('display') == 'flex'
+	      	imgsrc = $('.modal-content').attr('src')
+	      	weddingIndx = imgsrc.indexOf('weddings/')
+	      	dashIndx = imgsrc.indexOf('-')
+	      	imgNumber = parseInt(imgsrc.substring(weddingIndx + 9, dashIndx))
+	      	nextIndx = imgNumber
+	      	if imgNumber == $('.gallery-image').length
+	      		nextIndx = 0
+	      	$('.modal-content').attr('src', $('.gallery-image').get(nextIndx).getAttribute('src'))
+	      	
+	  event.preventDefault()
+	  return
+
 $(document).on 'turbolinks:load', ->
 
 	modal = document.getElementById('myModal')
 	img = document.getElementById('myImg')
 	modalImg = document.getElementById('img01')
-
 	
 	if $(window).width() >= 768
 		$('.gallery-image').click ->
