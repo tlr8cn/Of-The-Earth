@@ -170,11 +170,27 @@ h3 {
 
 .footer-text {
 	color: #888888;
-	font-size: 3rem;
+	font-size: 3.5rem;
 }
 
 .emphasized {
 	font-family: 'Autumn';
+}
+
+.social-media-wrapper
+{
+  margin-bottom: 10px;
+}
+
+.social-icon
+{
+  opacity: 0.35;
+  width: 3.5%;
+
+  &--instagram
+  {
+    margin-left: 5px;
+  }
 }
 
 
