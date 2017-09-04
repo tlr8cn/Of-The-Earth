@@ -119,9 +119,9 @@
 
   	 <div class="col-sm-12 status-message">
   	 	<% if params[:formStatus] == "success" %>
-  	 		<p class="success-status">I'm so excited to learn more about you and your special moment. I will review all your information and get back to you as soon as possible. I can't wait to work together.</p>
+  	 		<p class="success-status">I'm so excited to learn more about <span class="flavor">you</span> and your <span class="flavor">special moment</span>. I will review all your information and get back to you as soon as possible. I can't wait to work together.</p>
   	 	<% elsif params[:formStatus] == "fail" %>
-  	 		<p class="error-status">Whoops! It appears one of those pesky fields isn't filled out. Please fill them out so I can get the best idea of your special day or moment.</p>
+  	 		<p class="error-status"><span class="flavor">Whoops!</span><br>It appears one of those pesky fields isn't filled out. Please fill them out so I can get the best idea of your special day or moment.</p>
   	 	<% else %>
   	 		<p>Interested in working together? Please fill out the following information, and I will get back to you soon!
   	 	<% end %>
@@ -184,10 +184,10 @@
  	 		<br>
  	 		<div class="row">
  	 			<div class="col-sm-6 check-box">
- 	 				<input type="checkbox" name="client[engagement]"> I would like an engagement shoot
+ 	 				<input type="checkbox" name="client[engagement]"> I am interested in an engagement session
  	 			</div>
  	 			<div class="col-sm-6 check-box">
- 	 				<input type="checkbox" name="client[bridal]"> I would like a styled bridal shoot
+ 	 				<input type="checkbox" name="client[bridal]"> I am interested in a bridal session
  	 			</div>
  	 		</div>
  	 		<br>
@@ -215,7 +215,7 @@
 
  	 		<div class="row">
  	 			<div class="col-sm-12">
- 	 				<input class="centered-input input-fill-container" type="text" name="client[momentname]" placeholder="Moment Needing Captured" />
+ 	 				<input class="centered-input input-fill-container" type="text" name="client[momentname]" placeholder="Moment You Need Photographed" />
  	 			</div>
  	 		</div>
  	 		<br>

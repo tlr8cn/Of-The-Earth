@@ -37,11 +37,13 @@
 }
 
 .success-status {
-	color: green;
+	color: #6a9058;
+	margin-top: 15px;
 }
 
 .error-status {
-	color: red;
+	color: #d44c4c;
+	margin-top: 15px;
 }
 
 .option-picker {}
@@ -52,7 +54,7 @@
 }
 
 @media screen and (max-width: 768px) {
-	
+
 	.option-picker {
 		display: block;
 		margin: auto;

@@ -17,6 +17,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+
 @font-face {
   font-family: 'DAYROM';
   src: asset-url('DAYROM.eot');
@@ -212,6 +213,18 @@ h3 {
 	.logo-container
 	{
 		margin-bottom: 30px;
+	}
+}
+
+.flavor
+{
+	font-family: "Autumn" !important;
+	letter-spacing: 3px;
+	font-size: 18px
+
+	&--large
+	{
+		font-size: 22px;
 	}
 }
 
