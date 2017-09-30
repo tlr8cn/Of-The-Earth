@@ -1,257 +1,265 @@
-<div class="container">
- <div class="row">
-  	<div class="col-sm-12 logo-tabs">
-  	  <div class="row logo-container">
-  	  	<div class="col-sm-12 col-xs-10">
-			<%= link_to "/home/index" do %>
-				<%= image_tag image_path("logo-3.png"), class: "logo-image" %>
-			<% end %>
-  	  	</div>
-  	  	<div class="visible-sm visible-xs col-xs-2 hamburger-menu-wrapper">
-  	  		<%= image_tag image_path("hamburger-menu.png"), class: "hamburger-menu" %>
-  	  	</div>
-  	  </div>
-  	  <div class="row tabs-container" dropped="false">
-  	  	<nav>
-	  	    <div class="col-sm-4 primary-tab about-me">
+<div itemscope itemtype="http://schema.org/LocalBusiness">
+  <meta itemprop="name" content="Sienna Turecamo Photography" />
+  <meta itemprop="address" content="200 South West Street Apt. 2 Alexandria, VA 22314" />
+  <meta itemprop="telephone" content="5406609696" />
+  <meta itemprop="priceRange" content="125 - 15000" />
+  <meta itemprop="currenciesAccepted" content="USD"/>
+  <meta itemprop="url" content="http://siennaturecamophotography.com"/>
+  <div class="container">
+   <div class="row">
+    	<div class="col-sm-12 logo-tabs">
+    	  <div class="row logo-container">
+    	  	<div class="col-sm-12 col-xs-10" itemprop="logo">
+      			<%= link_to "/home/index" do %>
+      				<%= image_tag image_url("logo-3.png"), class: "logo-image", itemprop: "logo" %>
+      			<% end %>
+    	  	</div>
+    	  	<div class="visible-sm visible-xs col-xs-2 hamburger-menu-wrapper">
+    	  		<%= image_tag image_url("hamburger-menu.png"), class: "hamburger-menu" %>
+    	  	</div>
+    	  </div>
+    	  <div class="row tabs-container" dropped="false">
+    	  	<nav>
+  	  	    <div class="col-sm-4 primary-tab about-me">
 
-	  	    		<ul class="cf">
+  	  	    		<ul class="cf">
 
-			  	    	<li>
-			  	    		<div class="row">
+  			  	    	<li>
+  			  	    		<div class="row">
 
-			  	    			<div class="col-sm-2 about-me-flowers-cont-left">
-	  	    						<%= image_tag image_path("flower.gif"), class: "about-me-flowers" %>
-				  	    		</div>
-				  	    		<div class="col-sm-8 about-me-label-cont">
+  			  	    			<div class="col-sm-2 about-me-flowers-cont-left">
+  	  	    						<%= image_tag image_url("flower.gif"), class: "about-me-flowers" %>
+  				  	    		</div>
+  				  	    		<div class="col-sm-8 about-me-label-cont">
 
-				  	    			<%= link_to "ABOUT ME \u25BC", "javascript:void(0)" , class: "about-me-list-item about-me-mobile tab-primary-link dropdown" %>
+  				  	    			<%= link_to "ABOUT ME \u25BC", "javascript:void(0)" , class: "about-me-list-item about-me-mobile tab-primary-link dropdown" %>
 
-				  	    			<%= link_to "ABOUT ME", "javascript:void(0)" , class: "about-me-list-item about-me-desktop tab-primary-link dropdown" %>
+  				  	    			<%= link_to "ABOUT ME", "javascript:void(0)" , class: "about-me-list-item about-me-desktop tab-primary-link dropdown" %>
 
 
-				  	    		</div>
-				  	    			<div class="col-sm-2 about-me-flowers-cont-right">
+  				  	    		</div>
+  				  	    			<div class="col-sm-2 about-me-flowers-cont-right">
 
 
 
-				  	    			</div>
-				  	    	</div>
+  				  	    			</div>
+  				  	    	</div>
 
-				  	    	<ul class="sub-items about-me-sub-items" dropped="false">
-				                <li class="about-me-1">
-				  	    			<%= link_to "Who am I?", {controller: "about_me"}, class: "about-me-item sub-item" %>
-				                <li class="about-me-3">
-				                	<%= link_to "Client Testimonials", {controller: "client_testimonials"}, class: "about-me-item sub-item" %>
+  				  	    	<ul class="sub-items about-me-sub-items" dropped="false">
+  				                <li class="about-me-1">
+  				  	    			<%= link_to "Who am I?", {controller: "about_me"}, class: "about-me-item sub-item" %>
+  				                <li class="about-me-3">
+  				                	<%= link_to "Client Testimonials", {controller: "client_testimonials"}, class: "about-me-item sub-item" %>
 
-				                </li>
-				            </ul>
-			            </li>
-			        </ul>
+  				                </li>
+  				            </ul>
+  			            </li>
+  			        </ul>
 
-	  	    </div>
-	  	    <div class="col-sm-4 primary-tab my-work">
-	  	    	<ul class="cf">
-	  	    		<li>
+  	  	    </div>
+  	  	    <div class="col-sm-4 primary-tab my-work">
+  	  	    	<ul class="cf">
+  	  	    		<li>
 
-	  	    				<div class="row">
+  	  	    				<div class="row">
 
-			  	    			<div class="col-sm-2 my-work-flowers-cont-left">
-			  	    				<%= image_tag image_path("flower.gif"), class: "my-work-flowers" %>
-				  	    		</div>
-				  	    		<div class="col-sm-8 my-work-label-cont">
+  			  	    			<div class="col-sm-2 my-work-flowers-cont-left">
+  			  	    				<%= image_tag image_url("flower.gif"), class: "my-work-flowers" %>
+  				  	    		</div>
+  				  	    		<div class="col-sm-8 my-work-label-cont">
 
-	  	    					<%= link_to "MY WORK", "javascript:void(0)", class: "tab-primary-link dropdown my-work-list-item my-work-desktop" %>
+  	  	    					<%= link_to "MY WORK", "javascript:void(0)", class: "tab-primary-link dropdown my-work-list-item my-work-desktop" %>
 
-	  	    					<%= link_to "MY WORK \u25BC", "javascript:void(0)", class: "tab-primary-link dropdown my-work-list-item my-work-mobile" %>
+  	  	    					<%= link_to "MY WORK \u25BC", "javascript:void(0)", class: "tab-primary-link dropdown my-work-list-item my-work-mobile" %>
 
 
 
-				  	    		</div>
-				  	    			<div class="col-sm-2 my-work-flowers-cont-right">
+  				  	    		</div>
+  				  	    			<div class="col-sm-2 my-work-flowers-cont-right">
 
-	  	    						<%= image_tag image_path("flower.gif"), class: "my-work-flowers" %>
+  	  	    						<%= image_tag image_url("flower.gif"), class: "my-work-flowers" %>
 
-				  	    		</div>
-				  	    	</div>
+  				  	    		</div>
+  				  	    	</div>
 
 
 
-	  	    			<ul class="sub-items my-work-sub-items" dropped="false">
-				  	    	<li><%= link_to "Weddings", {controller: "weddings"}, class: "my-work-item sub-item" %></li>
-				            <li><%= link_to "Beautiful Moments", {controller: "beautiful_moments"}, class: "my-work-item sub-item" %></li>
-	  	    			</ul>
-	  	    		</li>
-	  	    	</ul>
-	  	    </div>
+  	  	    			<ul class="sub-items my-work-sub-items" dropped="false">
+  				  	    	<li><%= link_to "Weddings", {controller: "weddings"}, class: "my-work-item sub-item" %></li>
+  				            <li><%= link_to "Beautiful Moments", {controller: "beautiful_moments"}, class: "my-work-item sub-item" %></li>
+  	  	    			</ul>
+  	  	    		</li>
+  	  	    	</ul>
+  	  	    </div>
 
-	  	    <div class="col-sm-4 primary-tab book-online">
-	  	    	<ul class="cf">
-	  	    		<li>
-	  	    				<div class="row">
+  	  	    <div class="col-sm-4 primary-tab book-online">
+  	  	    	<ul class="cf">
+  	  	    		<li>
+  	  	    				<div class="row">
 
-			  	    			<div class="col-sm-2 book-online-flowers-cont-left">
+  			  	    			<div class="col-sm-2 book-online-flowers-cont-left">
 
-				  	    		</div>
-				  	    		<div class="col-sm-8 book-online-label-cont">
+  				  	    		</div>
+  				  	    		<div class="col-sm-8 book-online-label-cont">
 
-	  	    					<%= link_to "BOOK ONLINE", { controller: "book_online" }, class: "tab-primary-link dropdown" %>
+  	  	    					<%= link_to "BOOK ONLINE", { controller: "book_online" }, class: "tab-primary-link dropdown" %>
 
-				  	    		</div>
-				  	    			<div class="col-sm-2 book-online-flowers-cont-right">
-
-	  	    						<%= image_tag image_path("flower.gif"), class: "book-online-flowers" %>
-
-				  	    		</div>
-				  	    	</div>
-
-
-	  	    		</li>
-	  	    	</ul>
-	  	    </div>
-
-  	    </nav>
-  	  </div>
-  	</div>
-  </div>
+  				  	    		</div>
+  				  	    			<div class="col-sm-2 book-online-flowers-cont-right">
 
-
-  <div class="row">
-
-  	<div class="emphasized images-that-breathe">
-  		Images That Breathe
-  	</div>
-
-  </div>
-
-
-  <div class="row">
-  	<div class="col-sm-12 carousel-container">
-
-		<div id="myCarousel" class="carousel slide" data-ride="carousel">
-		  <!-- Indicators -->
-		  <ol class="carousel-indicators">
-		    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-		    <li data-target="#myCarousel" data-slide-to="1"></li>
-		    <li data-target="#myCarousel" data-slide-to="2"></li>
-		    <li data-target="#myCarousel" data-slide-to="3"></li>
-		    <li data-target="#myCarousel" data-slide-to="4"></li>
-		    <li data-target="#myCarousel" data-slide-to="5"></li>
-		    <li data-target="#myCarousel" data-slide-to="6"></li>
-		    <li data-target="#myCarousel" data-slide-to="7"></li>
-		    <li data-target="#myCarousel" data-slide-to="8"></li>
-		    <li data-target="#myCarousel" data-slide-to="9"></li>
-		    <li data-target="#myCarousel" data-slide-to="10"></li>
-		    <li data-target="#myCarousel" data-slide-to="11"></li>
-		    <li data-target="#myCarousel" data-slide-to="12"></li>
-		    <li data-target="#myCarousel" data-slide-to="13"></li>
-		    <li data-target="#myCarousel" data-slide-to="14"></li>
-		    <li data-target="#myCarousel" data-slide-to="15"></li>
-		    <li data-target="#myCarousel" data-slide-to="16"></li>
-		    <li data-target="#myCarousel" data-slide-to="17"></li>
-		  </ol>
-
-		   <!-- Wrapper for slides -->
-		  <div class="carousel-inner">
-		    <div class="item active">
-		      <%= image_tag image_path("weddings/4.jpg"), class: "carousel-image" %>
-		    </div>
-
-		    <div class="item">
-		    	<%= image_tag image_path("beautifulmoments/2.jpg"), class: "carousel-image" %>
-		    </div>
-
-		    <div class="item">
-		    	<%= image_tag image_path("weddings/7.jpg"), class: "carousel-image" %>
-		    </div>
-
-		   	<div class="item">
-		   		<%= image_tag image_path("weddings/30.jpg"), class: "carousel-image" %>
-		    </div>
-
-		   	<div class="item">
-		   		<%= image_tag image_path("weddings/31.jpg"), class: "carousel-image" %>
-		    </div>
-
-
-		  	<div class="item">
-		  		<%= image_tag image_path("beautifulmoments/4.jpg"), class: "carousel-image" %>
-		    </div>
-
-		    <div class="item">
-		    	<%= image_tag image_path("weddings/61.jpg"), class: "carousel-image" %>
-		    </div>
-
-		    <div class="item">
-		    	<%= image_tag image_path("beautifulmoments/5.jpg"), class: "carousel-image" %>
-		    </div>
-
-		    <div class="item">
-		    	<%= image_tag image_path("weddings/82.jpg"), class: "carousel-image" %>
-		    </div>
-
-		    <div class="item">
-		    	<%= image_tag image_path("weddings/87.jpg"), class: "carousel-image" %>
-		    </div>
-
-		    <div class="item">
-		    	<%= image_tag image_path("beautifulmoments/26.jpg"), class: "carousel-image" %>
-		    </div>
-
-		    <div class="item">
-		   		<%= image_tag image_path("weddings/93.jpg"), class: "carousel-image" %>
-		    </div>
-
-		    <div class="item">
-		    	<%= image_tag image_path("beautifulmoments/14.jpg"), class: "carousel-image" %>
-		    </div>
-
-		    <div class="item">
-		    	<%= image_tag image_path("weddings/130.jpg"), class: "carousel-image" %>
-		    </div>
-
-		    <div class="item">
-		    	<%= image_tag image_path("beautifulmoments/9.jpg"), class: "carousel-image" %>
-		    </div>
-
-		    <div class="item">
-		    	<%= image_tag image_path("beautifulmoments/37.jpg"), class: "carousel-image" %>
-		    </div>
-
-		    <div class="item">
-		    	<%= image_tag image_path("weddings/119.jpg"), class: "carousel-image" %>
-		    </div>
-
-		    <div class="item">
-		    	<%= image_tag image_path("weddings/11.jpg"), class: "carousel-image" %>
-		    </div>
-		  </div>
-
-		  <!-- Left and right controls -->
-		  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-		    <span class="glyphicon glyphicon-chevron-left"></span>
-		    <span class="sr-only">Previous</span>
-		  </a>
-		  <a class="right carousel-control" href="#myCarousel" data-slide="next">
-		    <span class="glyphicon glyphicon-chevron-right"></span>
-		    <span class="sr-only">Next</span>
-		  </a>
-		</div>
-
-  	</div>
-  </div>
-
-</div>
-
-
-<div class="row footer-container gutter-max">
- <div class="col-sm-12 footer">
-    <p class="footer-text">SiennaTurecamoPhotography@gmail.com </p>
-    <p class="footer-text">540.660.9696 </p>
-    <div class="social-media-wrapper">
-      <a href="https://www.facebook.com/SiennaTurecamoPhotography/"><%= image_tag image_path("facebook-icon.png"), class: "social-icon social-icon--facebook" %></a>
-      <a href="https://www.instagram.com/siennaturecamophotography/"><%= image_tag image_path("Instagram-icon.png"), class: "social-icon social-icon--instagram" %></a>
+  	  	    						<%= image_tag image_url("flower.gif"), class: "book-online-flowers" %>
+
+  				  	    		</div>
+  				  	    	</div>
+
+
+  	  	    		</li>
+  	  	    	</ul>
+  	  	    </div>
+
+    	    </nav>
+    	  </div>
+    	</div>
     </div>
-    <p class="footer-text"> All Creative Content © Sienna Turecamo </p>
+
+
+    <div class="row">
+
+    	<div class="emphasized images-that-breathe">
+    		Images That Breathe
+    	</div>
+
+    </div>
+
+
+    <div class="row">
+    	<div class="col-sm-12 carousel-container">
+
+  		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  		  <!-- Indicators -->
+  		  <ol class="carousel-indicators">
+  		    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+  		    <li data-target="#myCarousel" data-slide-to="1"></li>
+  		    <li data-target="#myCarousel" data-slide-to="2"></li>
+  		    <li data-target="#myCarousel" data-slide-to="3"></li>
+  		    <li data-target="#myCarousel" data-slide-to="4"></li>
+  		    <li data-target="#myCarousel" data-slide-to="5"></li>
+  		    <li data-target="#myCarousel" data-slide-to="6"></li>
+  		    <li data-target="#myCarousel" data-slide-to="7"></li>
+  		    <li data-target="#myCarousel" data-slide-to="8"></li>
+  		    <li data-target="#myCarousel" data-slide-to="9"></li>
+  		    <li data-target="#myCarousel" data-slide-to="10"></li>
+  		    <li data-target="#myCarousel" data-slide-to="11"></li>
+  		    <li data-target="#myCarousel" data-slide-to="12"></li>
+  		    <li data-target="#myCarousel" data-slide-to="13"></li>
+  		    <li data-target="#myCarousel" data-slide-to="14"></li>
+  		    <li data-target="#myCarousel" data-slide-to="15"></li>
+  		    <li data-target="#myCarousel" data-slide-to="16"></li>
+  		    <li data-target="#myCarousel" data-slide-to="17"></li>
+  		  </ol>
+
+  		   <!-- Wrapper for slides -->
+  		  <div class="carousel-inner">
+  		    <div class="item active">
+  		      <%= image_tag image_url("weddings/4.jpg"), class: "carousel-image", itemprop: "image" %>
+  		    </div>
+
+  		    <div class="item">
+  		    	<%= image_tag image_url("beautifulmoments/2.jpg"), class: "carousel-image", itemprop: "image" %>
+  		    </div>
+
+  		    <div class="item">
+  		    	<%= image_tag image_url("weddings/7.jpg"), class: "carousel-image", itemprop: "image" %>
+  		    </div>
+
+  		   	<div class="item">
+  		   		<%= image_tag image_url("weddings/30.jpg"), class: "carousel-image", itemprop: "image" %>
+  		    </div>
+
+  		   	<div class="item">
+  		   		<%= image_tag image_url("weddings/31.jpg"), class: "carousel-image", itemprop: "image" %>
+  		    </div>
+
+
+  		  	<div class="item">
+  		  		<%= image_tag image_url("beautifulmoments/4.jpg"), class: "carousel-image", itemprop: "image" %>
+  		    </div>
+
+  		    <div class="item">
+  		    	<%= image_tag image_url("weddings/61.jpg"), class: "carousel-image", itemprop: "image" %>
+  		    </div>
+
+  		    <div class="item">
+  		    	<%= image_tag image_url("beautifulmoments/5.jpg"), class: "carousel-image", itemprop: "image" %>
+  		    </div>
+
+  		    <div class="item">
+  		    	<%= image_tag image_url("weddings/82.jpg"), class: "carousel-image", itemprop: "image" %>
+  		    </div>
+
+  		    <div class="item">
+  		    	<%= image_tag image_url("weddings/87.jpg"), class: "carousel-image", itemprop: "image" %>
+  		    </div>
+
+  		    <div class="item">
+  		    	<%= image_tag image_url("beautifulmoments/26.jpg"), class: "carousel-image", itemprop: "image" %>
+  		    </div>
+
+  		    <div class="item">
+  		   		<%= image_tag image_url("weddings/93.jpg"), class: "carousel-image", itemprop: "image" %>
+  		    </div>
+
+  		    <div class="item">
+  		    	<%= image_tag image_url("beautifulmoments/14.jpg"), class: "carousel-image", itemprop: "image" %>
+  		    </div>
+
+  		    <div class="item">
+  		    	<%= image_tag image_url("weddings/130.jpg"), class: "carousel-image", itemprop: "image" %>
+  		    </div>
+
+  		    <div class="item">
+  		    	<%= image_tag image_url("beautifulmoments/9.jpg"), class: "carousel-image", itemprop: "image" %>
+  		    </div>
+
+  		    <div class="item">
+  		    	<%= image_tag image_url("beautifulmoments/37.jpg"), class: "carousel-image", itemprop: "image" %>
+  		    </div>
+
+  		    <div class="item">
+  		    	<%= image_tag image_url("weddings/119.jpg"), class: "carousel-image", itemprop: "image" %>
+  		    </div>
+
+  		    <div class="item">
+  		    	<%= image_tag image_url("weddings/11.jpg"), class: "carousel-image", itemprop: "image" %>
+  		    </div>
+  		  </div>
+
+  		  <!-- Left and right controls -->
+  		  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+  		    <span class="glyphicon glyphicon-chevron-left"></span>
+  		    <span class="sr-only">Previous</span>
+  		  </a>
+  		  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+  		    <span class="glyphicon glyphicon-chevron-right"></span>
+  		    <span class="sr-only">Next</span>
+  		  </a>
+  		</div>
+
+    	</div>
+    </div>
+
+  </div>
+
+
+  <div class="row footer-container gutter-max">
+   <div class="col-sm-12 footer">
+      <p class="footer-text">SiennaTurecamoPhotography@gmail.com </p>
+      <p class="footer-text">540.660.9696 </p>
+      <div class="social-media-wrapper">
+        <a href="https://www.facebook.com/SiennaTurecamoPhotography/"><%= image_tag image_url("facebook-icon.png"), class: "social-icon social-icon--facebook" %></a>
+        <a href="https://www.instagram.com/siennaturecamophotography/"><%= image_tag image_url("Instagram-icon.png"), class: "social-icon social-icon--instagram" %></a>
+      </div>
+      <p class="footer-text"> All Creative Content © Sienna Turecamo </p>
+    </div>
   </div>
 </div>
