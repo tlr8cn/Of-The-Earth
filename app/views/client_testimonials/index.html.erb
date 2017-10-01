@@ -1,204 +1,212 @@
-<div class="container">
- <div class="row">
-  	<div class="col-sm-12 logo-tabs">
-  	  <div class="row logo-container">
-  	  	<div class="col-sm-12 col-xs-10">
-			<%= link_to "/home/index" do %>
-				<%= image_tag image_url("logo-3.png"), class: "logo-image" %>
-			<% end %>
-  	  	</div>
-  	  	<div class="visible-sm visible-xs col-xs-2 hamburger-menu-wrapper">
-  	  		<%= image_tag image_url("hamburger-menu.png"), class: "hamburger-menu" %>
-  	  	</div>
-  	  </div>
-  	  <div class="row tabs-container" dropped="false">
-  	  	<nav>
-	  	    <div class="col-sm-4 primary-tab about-me">
+<div itemscope itemtype="http://schema.org/LocalBusiness">
+  <meta itemprop="name" content="Sienna Turecamo Photography" />
+  <meta itemprop="address" content="200 South West Street Apt. 2 Alexandria, VA 22314" />
+  <meta itemprop="telephone" content="5406609696" />
+  <meta itemprop="priceRange" content="125 - 15000" />
+  <meta itemprop="currenciesAccepted" content="USD"/>
+  <meta itemprop="url" content="http://siennaturecamophotography.com"/>
+  <div class="container">
+   <div class="row">
+    	<div class="col-sm-12 logo-tabs">
+    	  <div class="row logo-container">
+    	  	<div class="col-sm-12 col-xs-10">
+  			<%= link_to "/home/index" do %>
+  				<%= image_tag image_url("logo-3.png"), class: "logo-image", itemprop: "logo" %>
+  			<% end %>
+    	  	</div>
+    	  	<div class="visible-sm visible-xs col-xs-2 hamburger-menu-wrapper">
+    	  		<%= image_tag image_url("hamburger-menu.png"), class: "hamburger-menu" %>
+    	  	</div>
+    	  </div>
+    	  <div class="row tabs-container" dropped="false">
+    	  	<nav>
+  	  	    <div class="col-sm-4 primary-tab about-me">
 
-	  	    		<ul class="cf">
+  	  	    		<ul class="cf">
 
-			  	    	<li>
-			  	    		<div class="row">
+  			  	    	<li>
+  			  	    		<div class="row">
 
-			  	    			<div class="col-sm-2 about-me-flowers-cont-left">
-	  	    						<%= image_tag image_url("flower.gif"), class: "about-me-flowers" %>
-				  	    		</div>
-				  	    		<div class="col-sm-8 about-me-label-cont">
+  			  	    			<div class="col-sm-2 about-me-flowers-cont-left">
+  	  	    						<%= image_tag image_url("flower.gif"), class: "about-me-flowers" %>
+  				  	    		</div>
+  				  	    		<div class="col-sm-8 about-me-label-cont">
 
-				  	    			<%= link_to "ABOUT ME \u25BC", "javascript:void(0)" , class: "about-me-list-item about-me-mobile tab-primary-link dropdown" %>
+  				  	    			<%= link_to "ABOUT ME \u25BC", "javascript:void(0)" , class: "about-me-list-item about-me-mobile tab-primary-link dropdown" %>
 
-				  	    			<%= link_to "ABOUT ME", "javascript:void(0)" , class: "about-me-list-item about-me-desktop tab-primary-link dropdown" %>
-
-
-				  	    		</div>
-				  	    			<div class="col-sm-2 about-me-flowers-cont-right">
+  				  	    			<%= link_to "ABOUT ME", "javascript:void(0)" , class: "about-me-list-item about-me-desktop tab-primary-link dropdown" %>
 
 
-
-				  	    			</div>
-				  	    	</div>
-
-				  	    	<ul class="sub-items about-me-sub-items" dropped="false">
-				                <li class="about-me-1">
-				  	    			<%= link_to "Who am I?", {controller: "about_me"}, class: "about-me-item sub-item" %>
-				                <li class="about-me-3">
-				                	<%= link_to "Client Testimonials", {controller: "client_testimonials"}, class: "about-me-item sub-item" %>
-
-				                </li>
-				            </ul>
-			            </li>
-			        </ul>
-
-	  	    </div>
-	  	    <div class="col-sm-4 primary-tab my-work">
-	  	    	<ul class="cf">
-	  	    		<li>
-
-	  	    				<div class="row">
-
-			  	    			<div class="col-sm-2 my-work-flowers-cont-left">
-			  	    				<%= image_tag image_url("flower.gif"), class: "my-work-flowers" %>
-				  	    		</div>
-				  	    		<div class="col-sm-8 my-work-label-cont">
-
-	  	    					<%= link_to "MY WORK", "javascript:void(0)", class: "tab-primary-link dropdown my-work-list-item my-work-desktop" %>
-
-	  	    					<%= link_to "MY WORK \u25BC", "javascript:void(0)", class: "tab-primary-link dropdown my-work-list-item my-work-mobile" %>
+  				  	    		</div>
+  				  	    			<div class="col-sm-2 about-me-flowers-cont-right">
 
 
 
-				  	    		</div>
-				  	    			<div class="col-sm-2 my-work-flowers-cont-right">
+  				  	    			</div>
+  				  	    	</div>
 
-	  	    						<%= image_tag image_url("flower.gif"), class: "my-work-flowers" %>
+  				  	    	<ul class="sub-items about-me-sub-items" dropped="false">
+  				                <li class="about-me-1">
+  				  	    			<%= link_to "Who am I?", {controller: "about_me"}, class: "about-me-item sub-item" %>
+  				                <li class="about-me-3">
+  				                	<%= link_to "Client Testimonials", {controller: "client_testimonials"}, class: "about-me-item sub-item" %>
 
-				  	    		</div>
-				  	    	</div>
+  				                </li>
+  				            </ul>
+  			            </li>
+  			        </ul>
 
+  	  	    </div>
+  	  	    <div class="col-sm-4 primary-tab my-work">
+  	  	    	<ul class="cf">
+  	  	    		<li>
 
+  	  	    				<div class="row">
 
-	  	    			<ul class="sub-items my-work-sub-items" dropped="false">
-				  	    	<li><%= link_to "Weddings", {controller: "weddings"}, class: "my-work-item sub-item" %></li>
-				            <li><%= link_to "Beautiful Moments", {controller: "beautiful_moments"}, class: "my-work-item sub-item" %></li>
-	  	    			</ul>
-	  	    		</li>
-	  	    	</ul>
-	  	    </div>
+  			  	    			<div class="col-sm-2 my-work-flowers-cont-left">
+  			  	    				<%= image_tag image_url("flower.gif"), class: "my-work-flowers" %>
+  				  	    		</div>
+  				  	    		<div class="col-sm-8 my-work-label-cont">
 
-	  	    <div class="col-sm-4 primary-tab book-online">
-	  	    	<ul class="cf">
-	  	    		<li>
-	  	    				<div class="row">
+  	  	    					<%= link_to "MY WORK", "javascript:void(0)", class: "tab-primary-link dropdown my-work-list-item my-work-desktop" %>
 
-			  	    			<div class="col-sm-2 book-online-flowers-cont-left">
-
-				  	    		</div>
-				  	    		<div class="col-sm-8 book-online-label-cont">
-
-	  	    					<%= link_to "BOOK ONLINE", { controller: "book_online" }, class: "tab-primary-link dropdown" %>
-
-				  	    		</div>
-				  	    			<div class="col-sm-2 book-online-flowers-cont-right">
-
-	  	    						<%= image_tag image_url("flower.gif"), class: "book-online-flowers" %>
-
-				  	    		</div>
-				  	    	</div>
+  	  	    					<%= link_to "MY WORK \u25BC", "javascript:void(0)", class: "tab-primary-link dropdown my-work-list-item my-work-mobile" %>
 
 
-	  	    		</li>
-	  	    	</ul>
-	  	    </div>
 
-  	    </nav>
-  	  </div>
-  	</div>
-  </div>
-  <div class="row">
-  	<div class="col-sm-12 testimonials">
-		<h3>What my Clients are Saying.</h3>
+  				  	    		</div>
+  				  	    			<div class="col-sm-2 my-work-flowers-cont-right">
 
-		<hr>
+  	  	    						<%= image_tag image_url("flower.gif"), class: "my-work-flowers" %>
 
-	  	<%= image_tag image_url("testimonial.jpg"), class: "testimonial-image" %>
-
-	  	<hr>
+  				  	    		</div>
+  				  	    	</div>
 
 
-	  	<p>
-			"Working with Sienna Turecamo is a pleasure! She is professional, compassionate, and creative, and you can tell she loves what she does, which makes the sessions interesting, and fun! Her passion for capturing the perfect image is an exciting process that is rewarding to be a part of, and the results are outstanding!! I have always thought of myself as being non-photogenic, and yet, Sienna has been able to help me relax and enjoy the camera, and take some amazing pictures that are exactly what I am looking for! Sienna Turecamo Photography is the best!!!"
-  		</p>
-  		<p>
-  			-Nathalie H.
-  		</p>
 
-	  	<hr>
+  	  	    			<ul class="sub-items my-work-sub-items" dropped="false">
+  				  	    	<li><%= link_to "Weddings", {controller: "weddings"}, class: "my-work-item sub-item" %></li>
+  				            <li><%= link_to "Beautiful Moments", {controller: "beautiful_moments"}, class: "my-work-item sub-item" %></li>
+  	  	    			</ul>
+  	  	    		</li>
+  	  	    	</ul>
+  	  	    </div>
 
-	  	<p>
-  			"Sienna's artistic vision and professionalism are second to none. If you're looking for a photographer who can truly capture the essence of what makes you or your event special, then look no further. Sienna Turecamo Photography beautifully immortalizes the moments you never want to forget and makes you the subject of a masterpiece. Most importantly, with Sienna behind the camera, you feel less like prop and more like a friend as her upbeat attitude and sparkling personality are the bane of stage fright."
-  		</p>
-  		<p>
-  			-Tyler R.
-  		</p>
+  	  	    <div class="col-sm-4 primary-tab book-online">
+  	  	    	<ul class="cf">
+  	  	    		<li>
+  	  	    				<div class="row">
 
-	  	<hr>
+  			  	    			<div class="col-sm-2 book-online-flowers-cont-left">
 
-	  	<p>
-  			"It was our privilege to have you there with us Sienna! You are honestly such a great person and photographer. We really loved having your awesome spirit be part of our day."
-  		</p>
-  		<p>
-  			-Christine S.
-  		</p>
+  				  	    		</div>
+  				  	    		<div class="col-sm-8 book-online-label-cont">
 
-	  	<hr>
+  	  	    					<%= link_to "BOOK ONLINE", { controller: "book_online" }, class: "tab-primary-link dropdown" %>
 
-	  	<p>
-  			"Sienna is personable and professional in addition to being tremendously creative and talented. I recommend her to anyone seeking high-quality photographs. She will capture the moments you never want to forget."
-  		</p>
-  		<p>
-			-Julie L.
-		</p>
+  				  	    		</div>
+  				  	    			<div class="col-sm-2 book-online-flowers-cont-right">
 
-	  	<hr>
+  	  	    						<%= image_tag image_url("flower.gif"), class: "book-online-flowers" %>
 
-	  	<p>
-  			"We had a truly wonderful photo session. Really captured all the love from the wedding and photographed the priceless details! Excellent job!"
-  		</p>
-  		<p>
-			-Petrina R.
-		</p>
+  				  	    		</div>
+  				  	    	</div>
 
-	  	<hr>
 
-	  	<p>
-  			"I employed Sienna to take pictures for an environmental project that I was heading. She took the time and initiative to travel all around UVA's grounds in order to photograph the trash and litter that I specifically needed. Too busy to go along with her, I was completely confident in her abilities and able to trust her artistic skill and eye. The photographs came out fantastic, and she was so excellent in communicating back and forth with me. I highly recommend Sienna's photography and will definitely be working with her in the future for any photo needs I might have."
-  		</p>
-  		<p>
-			-Faith M.
-		</p>
+  	  	    		</li>
+  	  	    	</ul>
+  	  	    </div>
 
-	  	<hr>
-
-	  	<p>
-  			"I hired Sienna to do photography for a student conference I hosted at the University of Virginia and was so pleased! I didn't really have any specific ideas about what I wanted other than a group picture and trusted her judgement for what she felt important to capture. I was very impressed with her professionalism at the event; she introduced herself to me and got right to work. She never got in the way and fit herself seamlessly into the day. She captured a ton of great candid shots between attendees and speakers, as well as posed group shots. She got the pictures back to me so quickly (I believe in only a couple days) and all the attendees loved to see themselves in the event photos. Overall, I was extremely pleased with the pictures and Sienna's job at the event! She was kind and friendly to attendees, had creative posing ideas, and captured our event beautifully. I would definitely recommend Sienna to anyone needing some great photos!"
-  		</p>
-  		<p>
-			-Savannah S.
-		</p>
-
-  	</div>
-  </div>
-
-</div>
-
-<div class="row footer-container gutter-max">
- <div class="col-sm-12 footer">
-    <p class="footer-text">SiennaTurecamoPhotography@gmail.com </p>
-    <p class="footer-text">540.660.9696 </p>
-    <div class="social-media-wrapper">
-      <a href="https://www.facebook.com/SiennaTurecamoPhotography/"><%= image_tag image_url("facebook-icon.png"), class: "social-icon social-icon--facebook" %></a>
-      <a href="https://www.instagram.com/siennaturecamophotography/"><%= image_tag image_url("Instagram-icon.png"), class: "social-icon social-icon--instagram" %></a>
+    	    </nav>
+    	  </div>
+    	</div>
     </div>
-    <p class="footer-text"> All Creative Content © Sienna Turecamo </p>
+    <div class="row">
+    	<div class="col-sm-12 testimonials">
+  		<h3>What my Clients are Saying.</h3>
+
+  		<hr>
+
+  	  	<%= image_tag image_url("testimonial.jpg"), class: "testimonial-image", itemprop: "image" %>
+
+  	  	<hr>
+
+
+  	  	<p>
+  			"Working with Sienna Turecamo is a pleasure! She is professional, compassionate, and creative, and you can tell she loves what she does, which makes the sessions interesting, and fun! Her passion for capturing the perfect image is an exciting process that is rewarding to be a part of, and the results are outstanding!! I have always thought of myself as being non-photogenic, and yet, Sienna has been able to help me relax and enjoy the camera, and take some amazing pictures that are exactly what I am looking for! Sienna Turecamo Photography is the best!!!"
+    		</p>
+    		<p>
+    			-Nathalie H.
+    		</p>
+
+  	  	<hr>
+
+  	  	<p>
+    			"Sienna's artistic vision and professionalism are second to none. If you're looking for a photographer who can truly capture the essence of what makes you or your event special, then look no further. Sienna Turecamo Photography beautifully immortalizes the moments you never want to forget and makes you the subject of a masterpiece. Most importantly, with Sienna behind the camera, you feel less like prop and more like a friend as her upbeat attitude and sparkling personality are the bane of stage fright."
+    		</p>
+    		<p>
+    			-Tyler R.
+    		</p>
+
+  	  	<hr>
+
+  	  	<p>
+    			"It was our privilege to have you there with us Sienna! You are honestly such a great person and photographer. We really loved having your awesome spirit be part of our day."
+    		</p>
+    		<p>
+    			-Christine S.
+    		</p>
+
+  	  	<hr>
+
+  	  	<p>
+    			"Sienna is personable and professional in addition to being tremendously creative and talented. I recommend her to anyone seeking high-quality photographs. She will capture the moments you never want to forget."
+    		</p>
+    		<p>
+  			-Julie L.
+  		</p>
+
+  	  	<hr>
+
+  	  	<p>
+    			"We had a truly wonderful photo session. Really captured all the love from the wedding and photographed the priceless details! Excellent job!"
+    		</p>
+    		<p>
+  			-Petrina R.
+  		</p>
+
+  	  	<hr>
+
+  	  	<p>
+    			"I employed Sienna to take pictures for an environmental project that I was heading. She took the time and initiative to travel all around UVA's grounds in order to photograph the trash and litter that I specifically needed. Too busy to go along with her, I was completely confident in her abilities and able to trust her artistic skill and eye. The photographs came out fantastic, and she was so excellent in communicating back and forth with me. I highly recommend Sienna's photography and will definitely be working with her in the future for any photo needs I might have."
+    		</p>
+    		<p>
+  			-Faith M.
+  		</p>
+
+  	  	<hr>
+
+  	  	<p>
+    			"I hired Sienna to do photography for a student conference I hosted at the University of Virginia and was so pleased! I didn't really have any specific ideas about what I wanted other than a group picture and trusted her judgement for what she felt important to capture. I was very impressed with her professionalism at the event; she introduced herself to me and got right to work. She never got in the way and fit herself seamlessly into the day. She captured a ton of great candid shots between attendees and speakers, as well as posed group shots. She got the pictures back to me so quickly (I believe in only a couple days) and all the attendees loved to see themselves in the event photos. Overall, I was extremely pleased with the pictures and Sienna's job at the event! She was kind and friendly to attendees, had creative posing ideas, and captured our event beautifully. I would definitely recommend Sienna to anyone needing some great photos!"
+    		</p>
+    		<p>
+  			-Savannah S.
+  		</p>
+
+    	</div>
+    </div>
+
+  </div>
+
+  <div class="row footer-container gutter-max">
+   <div class="col-sm-12 footer">
+      <p class="footer-text">SiennaTurecamoPhotography@gmail.com </p>
+      <p class="footer-text">540.660.9696 </p>
+      <div class="social-media-wrapper">
+        <a href="https://www.facebook.com/SiennaTurecamoPhotography/"><%= image_tag image_url("facebook-icon.png"), class: "social-icon social-icon--facebook" %></a>
+        <a href="https://www.instagram.com/siennaturecamophotography/"><%= image_tag image_url("Instagram-icon.png"), class: "social-icon social-icon--instagram" %></a>
+      </div>
+      <p class="footer-text"> All Creative Content © Sienna Turecamo </p>
+    </div>
   </div>
 </div>

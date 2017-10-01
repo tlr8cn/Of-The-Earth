@@ -1,274 +1,282 @@
-<div class="container">
- <div class="row">
-  	<div class="col-sm-12 logo-tabs">
-  	  <div class="row logo-container">
-  	  	<div class="col-sm-12 col-xs-10">
-			<%= link_to "/home/index" do %>
-				<%= image_tag image_url("logo-3.png"), class: "logo-image" %>
-			<% end %>
-  	  	</div>
-  	  	<div class="visible-sm visible-xs col-xs-2 hamburger-menu-wrapper">
-  	  		<%= image_tag image_url("hamburger-menu.png"), class: "hamburger-menu" %>
-  	  	</div>
-  	  </div>
-  	  <div class="row tabs-container" dropped="false">
-  	  	<nav>
-	  	    <div class="col-sm-4 primary-tab about-me">
+<div itemscope itemtype="http://schema.org/LocalBusiness">
+  <meta itemprop="name" content="Sienna Turecamo Photography" />
+  <meta itemprop="address" content="200 South West Street Apt. 2 Alexandria, VA 22314" />
+  <meta itemprop="telephone" content="5406609696" />
+  <meta itemprop="priceRange" content="125 - 15000" />
+  <meta itemprop="currenciesAccepted" content="USD"/>
+  <meta itemprop="url" content="http://siennaturecamophotography.com"/>
+  <div class="container">
+   <div class="row">
+    	<div class="col-sm-12 logo-tabs">
+    	  <div class="row logo-container">
+    	  	<div class="col-sm-12 col-xs-10">
+  			<%= link_to "/home/index" do %>
+  				<%= image_tag image_url("logo-3.png"), class: "logo-image", itemprop: "logo" %>
+  			<% end %>
+    	  	</div>
+    	  	<div class="visible-sm visible-xs col-xs-2 hamburger-menu-wrapper">
+    	  		<%= image_tag image_url("hamburger-menu.png"), class: "hamburger-menu" %>
+    	  	</div>
+    	  </div>
+    	  <div class="row tabs-container" dropped="false">
+    	  	<nav>
+  	  	    <div class="col-sm-4 primary-tab about-me">
 
-	  	    		<ul class="cf">
+  	  	    		<ul class="cf">
 
-			  	    	<li>
-			  	    		<div class="row">
+  			  	    	<li>
+  			  	    		<div class="row">
 
-			  	    			<div class="col-sm-2 about-me-flowers-cont-left">
-	  	    						<%= image_tag image_url("flower.gif"), class: "about-me-flowers" %>
-				  	    		</div>
-				  	    		<div class="col-sm-8 about-me-label-cont">
+  			  	    			<div class="col-sm-2 about-me-flowers-cont-left">
+  	  	    						<%= image_tag image_url("flower.gif"), class: "about-me-flowers" %>
+  				  	    		</div>
+  				  	    		<div class="col-sm-8 about-me-label-cont">
 
-				  	    			<%= link_to "ABOUT ME \u25BC", "javascript:void(0)" , class: "about-me-list-item about-me-mobile tab-primary-link dropdown" %>
+  				  	    			<%= link_to "ABOUT ME \u25BC", "javascript:void(0)" , class: "about-me-list-item about-me-mobile tab-primary-link dropdown" %>
 
-				  	    			<%= link_to "ABOUT ME", "javascript:void(0)" , class: "about-me-list-item about-me-desktop tab-primary-link dropdown" %>
+  				  	    			<%= link_to "ABOUT ME", "javascript:void(0)" , class: "about-me-list-item about-me-desktop tab-primary-link dropdown" %>
 
 
-				  	    		</div>
-				  	    			<div class="col-sm-2 about-me-flowers-cont-right">
+  				  	    		</div>
+  				  	    			<div class="col-sm-2 about-me-flowers-cont-right">
 
 
 
-				  	    			</div>
-				  	    	</div>
+  				  	    			</div>
+  				  	    	</div>
 
-				  	    	<ul class="sub-items about-me-sub-items" dropped="false">
-				                <li class="about-me-1">
-				  	    			<%= link_to "Who am I?", {controller: "about_me"}, class: "about-me-item sub-item" %>
-				                <li class="about-me-3">
-				                	<%= link_to "Client Testimonials", {controller: "client_testimonials"}, class: "about-me-item sub-item" %>
+  				  	    	<ul class="sub-items about-me-sub-items" dropped="false">
+  				                <li class="about-me-1">
+  				  	    			<%= link_to "Who am I?", {controller: "about_me"}, class: "about-me-item sub-item" %>
+  				                <li class="about-me-3">
+  				                	<%= link_to "Client Testimonials", {controller: "client_testimonials"}, class: "about-me-item sub-item" %>
 
-				                </li>
-				            </ul>
-			            </li>
-			        </ul>
+  				                </li>
+  				            </ul>
+  			            </li>
+  			        </ul>
 
-	  	    </div>
-	  	    <div class="col-sm-4 primary-tab my-work">
-	  	    	<ul class="cf">
-	  	    		<li>
+  	  	    </div>
+  	  	    <div class="col-sm-4 primary-tab my-work">
+  	  	    	<ul class="cf">
+  	  	    		<li>
 
-	  	    				<div class="row">
+  	  	    				<div class="row">
 
-			  	    			<div class="col-sm-2 my-work-flowers-cont-left">
-			  	    				<%= image_tag image_url("flower.gif"), class: "my-work-flowers" %>
-				  	    		</div>
-				  	    		<div class="col-sm-8 my-work-label-cont">
+  			  	    			<div class="col-sm-2 my-work-flowers-cont-left">
+  			  	    				<%= image_tag image_url("flower.gif"), class: "my-work-flowers" %>
+  				  	    		</div>
+  				  	    		<div class="col-sm-8 my-work-label-cont">
 
-	  	    					<%= link_to "MY WORK", "javascript:void(0)", class: "tab-primary-link dropdown my-work-list-item my-work-desktop" %>
+  	  	    					<%= link_to "MY WORK", "javascript:void(0)", class: "tab-primary-link dropdown my-work-list-item my-work-desktop" %>
 
-	  	    					<%= link_to "MY WORK \u25BC", "javascript:void(0)", class: "tab-primary-link dropdown my-work-list-item my-work-mobile" %>
+  	  	    					<%= link_to "MY WORK \u25BC", "javascript:void(0)", class: "tab-primary-link dropdown my-work-list-item my-work-mobile" %>
 
 
 
-				  	    		</div>
-				  	    			<div class="col-sm-2 my-work-flowers-cont-right">
+  				  	    		</div>
+  				  	    			<div class="col-sm-2 my-work-flowers-cont-right">
 
-	  	    						<%= image_tag image_url("flower.gif"), class: "my-work-flowers" %>
+  	  	    						<%= image_tag image_url("flower.gif"), class: "my-work-flowers" %>
 
-				  	    		</div>
-				  	    	</div>
+  				  	    		</div>
+  				  	    	</div>
 
 
 
-	  	    			<ul class="sub-items my-work-sub-items" dropped="false">
-				  	    	<li><%= link_to "Weddings", {controller: "weddings"}, class: "my-work-item sub-item" %></li>
-				            <li><%= link_to "Beautiful Moments", {controller: "beautiful_moments"}, class: "my-work-item sub-item" %></li>
-	  	    			</ul>
-	  	    		</li>
-	  	    	</ul>
-	  	    </div>
+  	  	    			<ul class="sub-items my-work-sub-items" dropped="false">
+  				  	    	<li><%= link_to "Weddings", {controller: "weddings"}, class: "my-work-item sub-item" %></li>
+  				            <li><%= link_to "Beautiful Moments", {controller: "beautiful_moments"}, class: "my-work-item sub-item" %></li>
+  	  	    			</ul>
+  	  	    		</li>
+  	  	    	</ul>
+  	  	    </div>
 
-	  	    <div class="col-sm-4 primary-tab book-online">
-	  	    	<ul class="cf">
-	  	    		<li>
-	  	    				<div class="row">
+  	  	    <div class="col-sm-4 primary-tab book-online">
+  	  	    	<ul class="cf">
+  	  	    		<li>
+  	  	    				<div class="row">
 
-			  	    			<div class="col-sm-2 book-online-flowers-cont-left">
+  			  	    			<div class="col-sm-2 book-online-flowers-cont-left">
 
-				  	    		</div>
-				  	    		<div class="col-sm-8 book-online-label-cont">
+  				  	    		</div>
+  				  	    		<div class="col-sm-8 book-online-label-cont">
 
-	  	    					<%= link_to "BOOK ONLINE", { controller: "book_online" }, class: "tab-primary-link dropdown" %>
+  	  	    					<%= link_to "BOOK ONLINE", { controller: "book_online" }, class: "tab-primary-link dropdown" %>
 
-				  	    		</div>
-				  	    			<div class="col-sm-2 book-online-flowers-cont-right">
+  				  	    		</div>
+  				  	    			<div class="col-sm-2 book-online-flowers-cont-right">
 
-	  	    						<%= image_tag image_url("flower.gif"), class: "book-online-flowers" %>
+  	  	    						<%= image_tag image_url("flower.gif"), class: "book-online-flowers" %>
 
-				  	    		</div>
-				  	    	</div>
+  				  	    		</div>
+  				  	    	</div>
 
 
-	  	    		</li>
-	  	    	</ul>
-	  	    </div>
+  	  	    		</li>
+  	  	    	</ul>
+  	  	    </div>
 
-  	    </nav>
-  	  </div>
-  	</div>
-  </div>
-
-  <div class="row intro-text">
-  	<p class="intro-text-p">
-  		<span class="flavor flavor--large">Hello</span>, my beautiful friends.<br><br><span="intro-text-p--latter">Thank you for taking the time out of your day to learn a little bit more about me. I cannot wait to learn about you and your loved ones.</span>
-   	</p>
-  </div>
-
-
-  <div class="row">
-  	<div class="col-sm-12 personal-photo-container">
-  		<%= image_tag image_url("personal_photo.jpg"), class: "personal-photo" %>
-  	</div>
-  </div>
-
-
-  <div class="row">
-  	<div class="col-sm-12 personal-photo-container">
-
-
-  		<hr>
-  		<h3 class="h-1">Who Am I?</h3>
-
-
-	  		<p class="p-1">
-          My name is Sienna Turecamo and I am currently based out of Old Town Alexandria, VA, however my clients and photography expeditions take me <span class="flavor">all over the globe</span>. Most recently, I was lucky enough to photograph clients in Iceland and Ireland. I am predominately a wedding photographer but have had many clients in the realms of pet, boudoir, maternity & newborn, portrait, event, and editorial photography.
-	  		</p>
-
-  		<hr>
-  		<h3 class="h-2">Where I'm From.</h3>
-
-  		<p>
-  			I have lived in a plethora of places and experienced many different walks of life in my short 22 years. In June 2017 I graduated from the University of Virginia with a <span class="flavor">distinguished</span> Bachelors of Fine Art, where I studied photography for four years. Additionally, I have had the privilege to study art around the globe, including at the Corcoran School of the Arts and Design in Washington D.C., the Santa Reparata International School of Art in Firenze, Italy, and at St. George's School in Newport, Rhode Island.
-  		</p>
-
-  		<hr>
-  		<h3 >What Drives Me.</h3>
-
-  		<p>
-  			The one thing that has remained constant in my life is my own acknowledgement that I was born with the <span class="flavor">need to create</span>. Nothing fulfills my heart and soul like the act of creation. I am an artist through and through. I paint, draw, design, and do all things in my life according to my artistic soul.  However, <span class="flavor">photography is what I do</span>. People often ask me why.
-
-  		</p>
-
-  		<hr>
-  		<h3>Why I Photograph.</h3>
-
-  		<p>
-  			I have chosen the photograph as my tool to <span class="flavor">make a difference</span> in the world. Photography requires connection. A photograph is not made without an interaction. An image cannot come to fruition without my story and your story coming together to create something magical. This is why I am a photographer. It allows me to show you <span class="flavor">how magnificent you are</span>. In the process, you always teach me about myself. For me, it is the ultimate practice of <span class="flavor">love</span>, <span class="flavor">humanity</span>, and <span class="flavor">creation</span>.
-  		</p>
-
-  		<hr>
-  		<h3>My Promise to You.</h3>
-
-  		<p>
-  			I have an unwavering desire to bring love, happiness, and beauty to you by showing the ways it exists in us all and in our Earth. And so, with my camera as a tool, I wish to dedicate my life to helping you understand <span class="flavor">your worth</span>, your <span class="flavor">beauty</span>, and the <span class="flavor">magnificent details</span> of your biggest moments. I care immensely about each individual I have the privilege to work with and value each and every person that entrusts me with the task of capturing their most <span class="flavor">precious moments</span> along their life's journey.
-  		</p>
-
-  		<hr>
-  		<h3>Types of Shoots.</h3>
-
-  		<p>
-        On a personal note, I am a lover of the Earth, animals, and originality. I am first and foremost an artist. That is what you get when you hire me, <span class="flavor">not just a photographer</span>. I build sculptures for my clients, make sets, and put an immense amount of creative energy into each session..... because as soon as you reach out, I have a <span class="flavor">vision</span> for your images. I am a photographer who pushes the envelope and creative bounds. Often times, my photographs involve animals and amazing natural locations. Boudoir session on top of a horse? Engagement session with doves? Maternity session on the Shenandoah river? A newborn session in a handmade flower sculpture?  A portrait session with a dress made out of flowers? My specialty.
-      </p>
-
-  		<hr>
-  		<h3>My Modeling Experience.</h3>
-
-  		<p>
-        It is important to mention that I have experience on both sides of the camera as I am also a signed model. Each time I step in front of the lens I learn something new about how to successfully photograph my clients. I get what it is to be behind a camera. <span class="flavor">I know how it feels to be photographed</span>. I relate to the nerves that inevitably course through you before you step in front of a camera (not to mention meet a photographer for the first time). It's difficult and it can feel awkward. <span class="flavor">I empathize</span> with the stress of not being the exact weight you think you need to be to get photographed for a boudoir or wedding session. I relate to not having the perfect skin, or the perfect whatever-- because that's what makes us human. But, I will help you, <span class="flavor">support</span> you, and show you that none of that matters. My experience as a model has also given me extensive knowledge about the ways an individual should move in front of a camera to achieve desired images. Above all, it has instilled in me the importance of a respectful and <span class="flavor">trusting relationship</span> between a subject and the photographer.
-      </p>
-
-  		<hr>
-  		<h3>Capturing Your Essence.</h3>
-
-  		<p>
-        Perhaps most importantly, I know how it feels to see photographs of yourself that don't make you feel beautiful. I firmly believe there is no such thing as being un-photogenic. There are only photographers who aren't able to capture a person's true <span class="flavor">essence</span>. I aim to capture that essence.
-  		</p>
-
-  		<hr>
-
-  		<p class="end-of-the-day">
-  			At the end of the day, you and your happiness are what is important to me. Do not ever hesitate to reach out to me with any questions, concerns, or comments.
-  		</p>
-
-  		<hr>
-
-  		<br/>
-
-
-
-  		<div class="something-magical">
-	  		<p class="magical-text">
-	  			Let's create something magical.
-	  		</p>
-	  	</div>
-
-	  	<hr class="magicial-bottom-hr">
-
-	  	<h3>Featured in:</h3>
-  		<div class="row published-flex">
-	  		<div class="col-sm-4">
-	  			<a href="https://www.borrowedandblue.com/us/wedding-photographers/sienna-turecamo-photography"><%= image_tag "https://www.borrowedandblue.com/assets/badges/2017-featured-vendors-blue.png", class: "published-image published-image-1" %></a>
-	  		</div>
-
-	  		<div class="col-sm-4">
-	  			<a href="http://www.inkjunkeyz.com/"><%= image_tag image_url("published-2.jpg"), class: "published-image published-image-2" %></a>
-	  		</div>
-
-	  		<div class="col-sm-4">
-	  			<a href="https://ampersandlit.com/"><%= image_tag image_url("published-3.jpg"), class: "published-image published-image-3" %></a>
-	  		</div>
-	  	</div>
-
-  		<div class="row published-flex">
-	  		<div class="col-sm-4">
-	  			<a href="http://arts.virginia.edu/galleries-grounds/galleries-museums/"><%= image_tag image_url("published-4.jpg"), class: "published-image published-image-4" %></a>
-	  		</div>
-
-	  		<div class="col-sm-4">
-	  			<a href="http://www.thehaven.org/"><%= image_tag image_url("published-5.jpg"), class: "published-image published-image-5" %></a>
-	  		</div>
-
-	  		<div class="col-sm-4">
-	  			<a href="http://www.santareparata.org/"><%= image_tag image_url("published-6.jpg"), class: "published-image published-image-6" %></a>
-	  		</div>
-	  	</div>
-
-
-  		<div class="row published-flex">
-	  		<div class="col-sm-4">
-	  			<a href="http://opengrounds.virginia.edu/"><%= image_tag image_url("published-7.jpg"), class: "published-image published-image-7" %></a>
-	  		</div>
-
-	  		<div class="col-sm-4">
-	  		</div>
-
-	  		<div class="col-sm-4">
-	  			<a href="http://www.theknot.com/marketplace/sienna-turecamo-photography-old-town-alexandria-va-1058889?utm_source=vendor_website&utm_medium=banner&utm_term=94347d9c-8e6f-43d4-9d70-a7bc008ec374&utm_campaign=vendor_badge_assets"><img src="https://www.theknotpro.com/assets/VendorBadge_AsSeenOnWeb_fe690073f72a2750ec47dde6f9c1b5ca.png" width="190" class="published-image published-image-8" alt="As Seen on The Knot" border="0"></a>
-	  		</div>
-	  	</div>
-
-
-  	</div>
-  </div>
-
-</div>
-
-
-<div class="row footer-container gutter-max">
- <div class="col-sm-12 footer">
-    <p class="footer-text">SiennaTurecamoPhotography@gmail.com </p>
-    <p class="footer-text">540.660.9696 </p>
-    <div class="social-media-wrapper">
-      <a href="https://www.facebook.com/SiennaTurecamoPhotography/"><%= image_tag image_url("facebook-icon.png"), class: "social-icon social-icon--facebook" %></a>
-      <a href="https://www.instagram.com/siennaturecamophotography/"><%= image_tag image_url("Instagram-icon.png"), class: "social-icon social-icon--instagram" %></a>
+    	    </nav>
+    	  </div>
+    	</div>
     </div>
-    <p class="footer-text"> All Creative Content © Sienna Turecamo </p>
+
+    <div class="row intro-text">
+    	<p class="intro-text-p">
+    		<span class="flavor flavor--large">Hello</span>, my beautiful friends.<br><br><span="intro-text-p--latter">Thank you for taking the time out of your day to learn a little bit more about me. I cannot wait to learn about you and your loved ones.</span>
+     	</p>
+    </div>
+
+
+    <div class="row">
+    	<div class="col-sm-12 personal-photo-container">
+    		<%= image_tag image_url("personal_photo.jpg"), class: "personal-photo", itemprop: "image" %>
+    	</div>
+    </div>
+
+
+    <div class="row">
+    	<div class="col-sm-12 personal-photo-container">
+
+
+    		<hr>
+    		<h3 class="h-1">Who Am I?</h3>
+
+
+  	  		<p class="p-1">
+            My name is Sienna Turecamo and I am currently based out of Old Town Alexandria, VA, however my clients and photography expeditions take me <span class="flavor">all over the globe</span>. Most recently, I was lucky enough to photograph clients in Iceland and Ireland. I am predominately a wedding photographer but have had many clients in the realms of pet, boudoir, maternity & newborn, portrait, event, and editorial photography.
+  	  		</p>
+
+    		<hr>
+    		<h3 class="h-2">Where I'm From.</h3>
+
+    		<p>
+    			I have lived in a plethora of places and experienced many different walks of life in my short 22 years. In June 2017 I graduated from the University of Virginia with a <span class="flavor">distinguished</span> Bachelors of Fine Art, where I studied photography for four years. Additionally, I have had the privilege to study art around the globe, including at the Corcoran School of the Arts and Design in Washington D.C., the Santa Reparata International School of Art in Firenze, Italy, and at St. George's School in Newport, Rhode Island.
+    		</p>
+
+    		<hr>
+    		<h3 >What Drives Me.</h3>
+
+    		<p>
+    			The one thing that has remained constant in my life is my own acknowledgement that I was born with the <span class="flavor">need to create</span>. Nothing fulfills my heart and soul like the act of creation. I am an artist through and through. I paint, draw, design, and do all things in my life according to my artistic soul.  However, <span class="flavor">photography is what I do</span>. People often ask me why.
+
+    		</p>
+
+    		<hr>
+    		<h3>Why I Photograph.</h3>
+
+    		<p>
+    			I have chosen the photograph as my tool to <span class="flavor">make a difference</span> in the world. Photography requires connection. A photograph is not made without an interaction. An image cannot come to fruition without my story and your story coming together to create something magical. This is why I am a photographer. It allows me to show you <span class="flavor">how magnificent you are</span>. In the process, you always teach me about myself. For me, it is the ultimate practice of <span class="flavor">love</span>, <span class="flavor">humanity</span>, and <span class="flavor">creation</span>.
+    		</p>
+
+    		<hr>
+    		<h3>My Promise to You.</h3>
+
+    		<p>
+    			I have an unwavering desire to bring love, happiness, and beauty to you by showing the ways it exists in us all and in our Earth. And so, with my camera as a tool, I wish to dedicate my life to helping you understand <span class="flavor">your worth</span>, your <span class="flavor">beauty</span>, and the <span class="flavor">magnificent details</span> of your biggest moments. I care immensely about each individual I have the privilege to work with and value each and every person that entrusts me with the task of capturing their most <span class="flavor">precious moments</span> along their life's journey.
+    		</p>
+
+    		<hr>
+    		<h3>Types of Shoots.</h3>
+
+    		<p>
+          On a personal note, I am a lover of the Earth, animals, and originality. I am first and foremost an artist. That is what you get when you hire me, <span class="flavor">not just a photographer</span>. I build sculptures for my clients, make sets, and put an immense amount of creative energy into each session..... because as soon as you reach out, I have a <span class="flavor">vision</span> for your images. I am a photographer who pushes the envelope and creative bounds. Often times, my photographs involve animals and amazing natural locations. Boudoir session on top of a horse? Engagement session with doves? Maternity session on the Shenandoah river? A newborn session in a handmade flower sculpture?  A portrait session with a dress made out of flowers? My specialty.
+        </p>
+
+    		<hr>
+    		<h3>My Modeling Experience.</h3>
+
+    		<p>
+          It is important to mention that I have experience on both sides of the camera as I am also a signed model. Each time I step in front of the lens I learn something new about how to successfully photograph my clients. I get what it is to be behind a camera. <span class="flavor">I know how it feels to be photographed</span>. I relate to the nerves that inevitably course through you before you step in front of a camera (not to mention meet a photographer for the first time). It's difficult and it can feel awkward. <span class="flavor">I empathize</span> with the stress of not being the exact weight you think you need to be to get photographed for a boudoir or wedding session. I relate to not having the perfect skin, or the perfect whatever-- because that's what makes us human. But, I will help you, <span class="flavor">support</span> you, and show you that none of that matters. My experience as a model has also given me extensive knowledge about the ways an individual should move in front of a camera to achieve desired images. Above all, it has instilled in me the importance of a respectful and <span class="flavor">trusting relationship</span> between a subject and the photographer.
+        </p>
+
+    		<hr>
+    		<h3>Capturing Your Essence.</h3>
+
+    		<p>
+          Perhaps most importantly, I know how it feels to see photographs of yourself that don't make you feel beautiful. I firmly believe there is no such thing as being un-photogenic. There are only photographers who aren't able to capture a person's true <span class="flavor">essence</span>. I aim to capture that essence.
+    		</p>
+
+    		<hr>
+
+    		<p class="end-of-the-day">
+    			At the end of the day, you and your happiness are what is important to me. Do not ever hesitate to reach out to me with any questions, concerns, or comments.
+    		</p>
+
+    		<hr>
+
+    		<br/>
+
+
+
+    		<div class="something-magical">
+  	  		<p class="magical-text">
+  	  			Let's create something magical.
+  	  		</p>
+  	  	</div>
+
+  	  	<hr class="magicial-bottom-hr">
+
+  	  	<h3>Featured in:</h3>
+    		<div class="row published-flex">
+  	  		<div class="col-sm-4">
+  	  			<a href="https://www.borrowedandblue.com/us/wedding-photographers/sienna-turecamo-photography"><%= image_tag "https://www.borrowedandblue.com/assets/badges/2017-featured-vendors-blue.png", class: "published-image published-image-1" %></a>
+  	  		</div>
+
+  	  		<div class="col-sm-4">
+  	  			<a href="http://www.inkjunkeyz.com/"><%= image_tag image_url("published-2.jpg"), class: "published-image published-image-2" %></a>
+  	  		</div>
+
+  	  		<div class="col-sm-4">
+  	  			<a href="https://ampersandlit.com/"><%= image_tag image_url("published-3.jpg"), class: "published-image published-image-3" %></a>
+  	  		</div>
+  	  	</div>
+
+    		<div class="row published-flex">
+  	  		<div class="col-sm-4">
+  	  			<a href="http://arts.virginia.edu/galleries-grounds/galleries-museums/"><%= image_tag image_url("published-4.jpg"), class: "published-image published-image-4" %></a>
+  	  		</div>
+
+  	  		<div class="col-sm-4">
+  	  			<a href="http://www.thehaven.org/"><%= image_tag image_url("published-5.jpg"), class: "published-image published-image-5" %></a>
+  	  		</div>
+
+  	  		<div class="col-sm-4">
+  	  			<a href="http://www.santareparata.org/"><%= image_tag image_url("published-6.jpg"), class: "published-image published-image-6" %></a>
+  	  		</div>
+  	  	</div>
+
+
+    		<div class="row published-flex">
+  	  		<div class="col-sm-4">
+  	  			<a href="http://opengrounds.virginia.edu/"><%= image_tag image_url("published-7.jpg"), class: "published-image published-image-7" %></a>
+  	  		</div>
+
+  	  		<div class="col-sm-4">
+  	  		</div>
+
+  	  		<div class="col-sm-4">
+  	  			<a href="http://www.theknot.com/marketplace/sienna-turecamo-photography-old-town-alexandria-va-1058889?utm_source=vendor_website&utm_medium=banner&utm_term=94347d9c-8e6f-43d4-9d70-a7bc008ec374&utm_campaign=vendor_badge_assets"><img src="https://www.theknotpro.com/assets/VendorBadge_AsSeenOnWeb_fe690073f72a2750ec47dde6f9c1b5ca.png" width="190" class="published-image published-image-8" alt="As Seen on The Knot" border="0"></a>
+  	  		</div>
+  	  	</div>
+
+
+    	</div>
+    </div>
+
+  </div>
+
+
+  <div class="row footer-container gutter-max">
+   <div class="col-sm-12 footer">
+      <p class="footer-text">SiennaTurecamoPhotography@gmail.com </p>
+      <p class="footer-text">540.660.9696 </p>
+      <div class="social-media-wrapper">
+        <a href="https://www.facebook.com/SiennaTurecamoPhotography/"><%= image_tag image_url("facebook-icon.png"), class: "social-icon social-icon--facebook" %></a>
+        <a href="https://www.instagram.com/siennaturecamophotography/"><%= image_tag image_url("Instagram-icon.png"), class: "social-icon social-icon--instagram" %></a>
+      </div>
+      <p class="footer-text"> All Creative Content © Sienna Turecamo </p>
+    </div>
   </div>
 </div>
